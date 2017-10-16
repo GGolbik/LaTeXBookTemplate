@@ -1,0 +1,29 @@
+\RedeclareSectionCommand[tocnumwidth=6em]{section}
+\RedeclareSectionCommand[tocnumwidth=6.5em]{subsection}
+
+\RedeclareSectionCommand[tocindent=0em]{section}
+\RedeclareSectionCommand[tocindent=2em]{subsection}
+
+\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+\chapter*{\DICTAppendix}
+
+\nomtcrule
+\mtcsettitle{minitoc}{\DICTTableOfAppendix}
+\setcounter{section}{0}
+
+\addstarredchapter{\DICTAppendix}
+
+\minitoc% minitoc-Ausgeben 
+
+\newpage
+
+\renewcommand{\thesection}{\DICTAppendix~\Alph{section}}
+\section{Packed Objects Encoding tables}
+
+\subsection{Packed Objects Encoding tables} 
+
+\section{Encoding Packed Objects}
+
+\section{Decoding Packed Objects}
+
+\addtocontents{toc}{\protect\setcounter{tocdepth}{3}}

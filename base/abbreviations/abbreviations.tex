@@ -1,0 +1,51 @@
+% add table of contents entry
+\addcontentsline{toc}{section}{\DICTAbbreviations}
+\chapter*{\DICTAbbreviations}
+
+
+% Dazu kann ein Kurzname zwischen der Abkürzung und der Langform angegeben werden (wie z.B. bei I²C). Dies ist nötig bei z.B. mathematischen Zeichen, da in der Abkürzung nur normale Zeichen eingesetzt werden dürfen. Der zugehörige Aufruf sieht wie gewohnt aus: \ac{I2C}, im erzeugten Dokument erscheint für die Abkürzung der Kurzname I²C.
+% Nach \begin{acronym} kann in eckigen Klammern ein Ausdruck angegeben werden. Nach der Länge dieses Ausdrucks wird der Einzug der ausgeschriebenen Abkürzungen gesetzt. Hier empfiehlt es sich, die längste Abkürzung zu verwenden um einen gleichmäßigen Einzug bei allen Abkürzungen zu erhalten.
+
+\begin{acronym}[Bash]
+    \acro{KDE}{K Desktop Environment}
+    \acro{SQL}{Structured Query Language}
+    \acro{Bash}{Bourne-again shell}
+\end{acronym}
+
+% Verwendung im Text
+% Hier nur die wichtigsten Beispiele:
+
+% Gibt bei der ersten Verwendung die Langform mit der Abkürzung in Klammern aus, ab dann stets die Kurzform.
+%--------------------------------------
+% \ac{KDE} % K Desktop Environment (KDE)
+%--------------------------------------
+
+% Gibt die Abkürzung aus.
+%--------------------------------------
+% \acs{KDE} % KDE
+%--------------------------------------
+
+% Gibt die Langform und die Kurzform aus.
+%--------------------------------------
+% \acf{KDE} % K Desktop Environment (KDE)
+%--------------------------------------
+
+% Gibt nur die Langform ohne die Kurzform aus.
+%--------------------------------------
+% \acl{KDE} % K Desktop Environment
+%--------------------------------------
+
+% Analog zu den obigen Befehlen kann man den Plural auch entsprechend anzeigen:
+%--------------------------------------
+% \acp{KDE} % K Desktop Environments (KDEs)
+% \acsp{KDE} % KDEs
+% \acfp{KDE} % K Desktop Environments (KDEs)
+% \aclp{KDE} % K Desktop Environments
+%--------------------------------------
+
+
+% Falls der Plural nicht auf -s endet, so kann man diesen mit folgendem Befehl festlegen:
+%--------------------------------------
+% \acrodefplural{VM}[VMs]{Virtuelle Maschinen}
+%--------------------------------------
+

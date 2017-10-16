@@ -1,0 +1,101 @@
+% The main document in ShareLaTeX is the file which LATEX will be told to compile first. It is the main file of the project, which all other parts (classes, packages, chapters etc.) will be inputted into. By default in ShareLaTeX, the main document will be set to be the document in the project which begins with the \documentclass[...]{...} command.
+\documentclass[
+    a4paper, % a4 size 210x297 mm
+    12pt,
+    openany, % required to remove empty page after chapter
+    oneside % oneside or twoside
+]{scrbook}
+
+% initialize basic settings
+\input{config/config}
+
+% being document
+\begin{document}
+
+%required for appendix
+\dominitoc
+
+% adds only page number to page
+\pagestyle{plain}
+
+% change page numbering to arabic and start by page 1
+\pagenumbering{Roman}
+
+% Title page
+%--------------------------------------
+\input{base/titlepage/titlepage}
+\setcounter{page}{2}
+%--------------------------------------
+
+% Second page with disclaimer and copyright
+%--------------------------------------
+% remove page number on this page
+\thispagestyle{empty}
+\input{base/disclaimer/disclaimer}
+\vfill
+\input{base/copyright/copyright}
+\newpage
+%--------------------------------------
+
+% Table of contents
+%-------------------------------------
+%\pagestyle{empty}
+\input{base/tableofcontents/tableofcontents}
+\newpage
+%--------------------------------------
+
+% List of Figures
+%--------------------------------------
+\input{base/listoffigures/listoffigures}
+\newpage
+%--------------------------------------
+
+% List of Tables
+%--------------------------------------
+\input{base/listoftables/listoftables}
+\newpage
+%--------------------------------------
+
+% List of Listings
+%--------------------------------------
+\input{base/lstlistoflistings/lstlistoflistings}  
+\newpage
+%--------------------------------------
+
+% List of Abbreviations
+%--------------------------------------
+\input{base/abbreviations/abbreviations}  
+\newpage
+%--------------------------------------
+
+% change page numbering to arabic and start by page 1
+\pagenumbering{arabic}
+
+% Header & footer
+%--------------------------------------
+\input{base/headerfooter/headerfooter}  
+%--------------------------------------
+
+% Content
+%--------------------------------------
+\input{contents/contents}
+%--------------------------------------
+
+% Appendix
+%--------------------------------------
+\input{base/appendix/appendix}  
+\newpage
+%--------------------------------------
+
+% References
+%-------------------------------------
+\input{base/bibliography/bibliography}
+\newpage
+%--------------------------------------
+
+% Index
+%--------------------------------------
+\input{base/index/index}
+%--------------------------------------
+
+\end{document}

@@ -1,10 +1,5 @@
-\ifnum\pdfstrcmp{\LANGUAGE}{EN}=0
-    \input{contents/EN/contents}
-\else
-\ifnum\pdfstrcmp{\LANGUAGE}{DE}=0
-    \input{contents/DE/contents}
-\else
-    UNSUPPORTED LANGUAGE ,,\LANGUAGE ``
-\fi
-\fi
-\newpage
+\IfFileExists{contents/\LANGUAGE/contents}{
+    \input{contents/\LANGUAGE/contents}
+}{false-branch
+    Content: UNSUPPORTED LANGUAGE ,,\LANGUAGE ``
+}

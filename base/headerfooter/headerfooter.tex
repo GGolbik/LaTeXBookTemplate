@@ -1,3 +1,7 @@
+%\ifthenelse{\equal{\SIDE}{twoside}}
+%    {\input{base/headerfooter/twoside}}
+%    {\input{base/headerfooter/oneside}}
+    
 \pagestyle{fancy}
 
 \fancyhf{}
@@ -9,74 +13,76 @@
 % R for right side
 
 % set header
-
-% If oneside
 %--------------------------------------
-\fancyhead[L]{\includegraphics[width=5mm]{\IMGHeader}}
-\fancyhead[R]{\DICTDocTitle}
-\fancyhead[C]{}
-%--------------------------------------
-
-\begin{comment} 
-    % If twoside
-    %--------------------------------------
-    \fancyhead[RE,LO]{\includegraphics[width=5mm]{\IMGHeader}}
-    \fancyhead[LE,RO]{\DICTDocTitle}
-    \fancyhead[CE,CO]{}
-    %--------------------------------------
-\end{comment}
+\ifthenelse{\equal{\SIDE}{oneside}}
+    {
+        \fancyhead[L]{\includegraphics[width=5mm]{\IMGHeader}}
+        \fancyhead[R]{\DICTDocTitle}
+        \fancyhead[C]{}
+    }
+    {
+        \fancyhead[RE,LO]{\includegraphics[width=5mm]{\IMGHeader}}
+        \fancyhead[LE,RO]{\DICTDocTitle}
+        \fancyhead[CE,CO]{}
+    }
 
 % change header line color
 \patchcmd{\headrule}{\hrule}{\color{LightGray}\hrule}{}{}
 % show header line
 \renewcommand{\headrulewidth}{0.4pt} % set to 0pt if line shall be removed
+%--------------------------------------
+
 
 % set footer
-
-% If oneside
 %--------------------------------------
-\fancyfoot[R]{Page \thepage \hspace{1pt} of \pageref{LastPage}}
-\fancyfoot[L]{\DICTDocDate}
-\fancyfoot[C]{}
-%--------------------------------------
-
-\begin{comment} 
-    % If twoside
-    %--------------------------------------
-    \fancyfoot[RE,LO]{Page \thepage \hspace{1pt} of \pageref{LastPage}}
-    \fancyfoot[LE,RO]{\DICTDocDate}
-    \fancyfoot[CE,CO]{}
-    %--------------------------------------
-\end{comment}
+\ifthenelse{\equal{\SIDE}{oneside}}
+    {
+        \fancyfoot[R]{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+        \fancyfoot[L]{\DICTDocDate}
+        \fancyfoot[C]{}
+    }
+    {
+        \fancyfoot[RE,LO]{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+        \fancyfoot[LE,RO]{\DICTDocDate}
+        \fancyfoot[CE,CO]{}
+    }
 
 % change footer line color
 \patchcmd{\footrule}{\hrule}{\color{LightGray}\hrule}{}{}
 % show footer line
 \renewcommand{\footrulewidth}{0.4pt}% default is 0pt
-
+%--------------------------------------
 
 \fancypagestyle{plain}{%
     \fancyhf{}
     
     % set header
-    
-    % If oneside
     %--------------------------------------
-    \fancyhead[L]{\includegraphics[width=5mm]{\IMGHeader}}
-    \fancyhead[R]{\DICTDocTitle}
-    \fancyhead[C]{}
+    \ifthenelse{\equal{\SIDE}{oneside}}
+    {
+        \fancyhead[L]{\includegraphics[width=5mm]{\IMGHeader}}
+        \fancyhead[R]{\DICTDocTitle}
+        \fancyhead[C]{}
+    }
+    {
+        \fancyhead[RE,LO]{\includegraphics[width=5mm]{\IMGHeader}}
+        \fancyhead[LE,RO]{\DICTDocTitle}
+        \fancyhead[CE,CO]{}
+    }
     %--------------------------------------
-    
     
     
     % set footer
-    
-    % If oneside
     %--------------------------------------
-    \fancyfoot[R]{Page \thepage \hspace{1pt} of \pageref{LastPage}}
-    \fancyfoot[L]{\DICTDocDate}
-    \fancyfoot[C]{}
-    %--------------------------------------
-    
-    
+    \ifthenelse{\equal{\SIDE}{oneside}}
+    {
+        \fancyfoot[R]{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+        \fancyfoot[L]{\DICTDocDate}
+        \fancyfoot[C]{}
+    }
+    {
+        \fancyfoot[RE,LO]{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+        \fancyfoot[LE,RO]{\DICTDocDate}
+        \fancyfoot[CE,CO]{}
+    }
 }

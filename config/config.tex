@@ -1,22 +1,49 @@
-% page dimensions
+\usepackage{ifthen}
+
+% check if document is oneside or twoside
 %--------------------------------------
-% see https://de.sharelatex.com/learn/Page_size_and_margins
-\usepackage{geometry}\geometry{
-    a4paper, % a4 size 210x297 mm
-    %twoside, % uncomment for twoside documents
-    left=35mm,
-    right=20mm,
-    top=35mm,
-    bottom=25mm,
-    footskip=10mm,
-    headheight=20mm % required for header
-}
+\makeatletter
+\if@twoside
+    \def\SIDE{twoside}
+\else
+    \def\SIDE{oneside}
+\fi
+\makeatother
 %--------------------------------------
 
 % Define the used document language in ISO 639-1 code
 % see for more info https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
 %--------------------------------------
 \def\LANGUAGE{EN}
+%--------------------------------------
+
+% page dimensions
+%--------------------------------------
+% see https://de.sharelatex.com/learn/Page_size_and_margins
+\ifthenelse{\equal{\SIDE}{oneside}}
+    {
+        \usepackage{geometry}\geometry{
+            a4paper, % a4 size 210x297 mm
+            left=35mm,
+            right=20mm,
+            top=35mm,
+            bottom=25mm,
+            footskip=10mm,
+            headheight=20mm % required for header
+        }
+    }
+    {
+        \usepackage{geometry}\geometry{
+            a4paper, % a4 size 210x297 mm
+            twoside,
+            left=35mm,
+            right=20mm,
+            top=35mm,
+            bottom=25mm,
+            footskip=10mm,
+            headheight=20mm % required for header
+        }
+    }
 %--------------------------------------
 
 % reduce chapter margin

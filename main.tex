@@ -21,51 +21,98 @@
 % change page numbering to arabic and start by page 1
 \pagenumbering{Roman}
 
-% Title page
+% Cover page
 %--------------------------------------
-\input{base/titlepage/titlepage}
-\setcounter{page}{2}
+\ifthenelse{\equal{\CONFIGEnableCoverSheet}{true}}
+{
+    \input{base/coversheet/coversheet}
+    \setcounter{page}{2}
+}{}
 %--------------------------------------
 
 % Second page with disclaimer and copyright
 %--------------------------------------
 % remove page number on this page
-\thispagestyle{empty}
-\input{base/disclaimer/disclaimer}
-\vfill
-\input{base/copyright/copyright}
-\newpage
+\ifthenelse{\equal{\CONFIGEnableDisclaimer}{true}}
+{
+    \thispagestyle{empty}
+}{
+    \ifthenelse{\equal{\CONFIGEnableCopyright}{true}}
+    {
+        \thispagestyle{empty}
+    }{}
+}
+\ifthenelse{\equal{\CONFIGEnableDisclaimer}{true}}
+{
+    \input{base/disclaimer/disclaimer}
+}{}
+
+\ifthenelse{\equal{\CONFIGEnableDisclaimer}{true}}
+{}{
+    \phantom{}
+    \vfill
+}
+
+\ifthenelse{\equal{\CONFIGEnableCopyright}{true}}
+{
+    \input{base/copyright/copyright}
+}{}
+
+\ifthenelse{\equal{\CONFIGEnableDisclaimer}{true}}
+{
+    \newpage
+}{
+    \ifthenelse{\equal{\CONFIGEnableCopyright}{true}}
+    {
+        \newpage
+    }{}
+}
 %--------------------------------------
 
 % Table of contents
 %-------------------------------------
-%\pagestyle{empty}
-\input{base/tableofcontents/tableofcontents}
-\newpage
+\ifthenelse{\equal{\CONFIGEnableTableOfContents}{true}}
+{
+    %\pagestyle{empty}
+    \input{base/tableofcontents/tableofcontents}
+    \newpage
+}{}
 %--------------------------------------
 
 % List of Figures
 %--------------------------------------
-\input{base/listoffigures/listoffigures}
-\newpage
+\ifthenelse{\equal{\CONFIGEnableListOfFigures}{true}}
+{
+    \input{base/listoffigures/listoffigures}
+    \newpage
+}{}
 %--------------------------------------
 
 % List of Tables
 %--------------------------------------
-\input{base/listoftables/listoftables}
-\newpage
+\ifthenelse{\equal{\CONFIGEnableListOfTables}{true}}
+{
+    \input{base/listoftables/listoftables}
+    \newpage
+}{}
 %--------------------------------------
 
 % List of Listings
 %--------------------------------------
-\input{base/lstlistoflistings/lstlistoflistings}  
-\newpage
+\ifthenelse{\equal{\CONFIGEnableListOfSnippets}{true}}
+{
+    \input{base/lstlistoflistings/lstlistoflistings}  
+    \newpage
+}{}
 %--------------------------------------
 
 % List of Abbreviations
 %--------------------------------------
-\input{base/abbreviations/abbreviations}  
-\newpage
+\ifthenelse{\equal{\CONFIGEnableListOfAbbreviations}{true}}
+{
+    \input{base/abbreviations/abbreviations}  
+    \newpage
+}{}
 %--------------------------------------
 
 % change page numbering to arabic and start by page 1
@@ -83,19 +130,41 @@
 
 % Appendix
 %--------------------------------------
-\input{base/appendix/appendix}  
-\newpage
+\ifthenelse{\equal{\CONFIGEnableAppendix}{true}}
+{
+    \input{base/appendix/appendix}
+    
+    \ifthenelse{\equal{\CONFIGEnableReferences}{true}}
+    {
+        \newpage
+    }{
+        \ifthenelse{\equal{\CONFIGEnableIndex}{true}}
+        {
+            \newpage
+        }{}
+    }
+}{}
 %--------------------------------------
 
 % References
 %-------------------------------------
-\input{base/bibliography/bibliography}
-\newpage
+\ifthenelse{\equal{\CONFIGEnableReferences}{true}}
+{
+    \input{base/bibliography/bibliography}
+    
+    \ifthenelse{\equal{\CONFIGEnableIndex}{true}}
+    {
+        \newpage
+    }{}
+}{}
 %--------------------------------------
 
 % Index
 %--------------------------------------
-\input{base/index/index}
+\ifthenelse{\equal{\CONFIGEnableIndex}{true}}
+{
+    \input{base/index/index}
+}{}
 %--------------------------------------
 
 \end{document}

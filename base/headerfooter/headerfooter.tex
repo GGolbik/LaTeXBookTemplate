@@ -1,4 +1,4 @@
-%\ifthenelse{\equal{\SIDE}{twoside}}
+%\ifthenelse{\equal{\CONFIGLanguage}{twoside}}
 %    {\input{base/headerfooter/twoside}}
 %    {\input{base/headerfooter/oneside}}
     
@@ -14,7 +14,7 @@
 
 % set header
 %--------------------------------------
-\ifthenelse{\equal{\SIDE}{oneside}}
+\ifthenelse{\equal{\CONFIGOneTwoSided}{oneside}}
     {
         \fancyhead[L]{\includegraphics[width=5mm]{\IMGHeader}}
         \fancyhead[R]{\DICTDocTitle}
@@ -35,7 +35,7 @@
 
 % set footer
 %--------------------------------------
-\ifthenelse{\equal{\SIDE}{oneside}}
+\ifthenelse{\equal{\CONFIGOneTwoSided}{oneside}}
     {
         \fancyfoot[R]{Page \thepage \hspace{1pt} of \pageref{LastPage}}
         \fancyfoot[L]{\DICTDocDate}
@@ -58,7 +58,7 @@
     
     % set header
     %--------------------------------------
-    \ifthenelse{\equal{\SIDE}{oneside}}
+    \ifthenelse{\equal{\CONFIGOneTwoSided}{oneside}}
     {
         \fancyhead[L]{\includegraphics[width=5mm]{\IMGHeader}}
         \fancyhead[R]{\DICTDocTitle}
@@ -74,7 +74,7 @@
     
     % set footer
     %--------------------------------------
-    \ifthenelse{\equal{\SIDE}{oneside}}
+    \ifthenelse{\equal{\CONFIGOneTwoSided}{oneside}}
     {
         \fancyfoot[R]{Page \thepage \hspace{1pt} of \pageref{LastPage}}
         \fancyfoot[L]{\DICTDocDate}

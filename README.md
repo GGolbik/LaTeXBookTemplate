@@ -14,7 +14,7 @@ The document style from one-sided to two-sided can be set by the property of **d
 
 ## Language Support
 
-The language can be set in [congig/config.tex](https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/config/config.tex) line 17
+The language can be set in [congig/config.tex](https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/config/config.tex) line 4
 
 ### Sections
 

@@ -13,9 +13,11 @@
 
 \addstarredchapter{\DICTAppendix}
 
-\minitoc% minitoc-Ausgeben 
-
-\newpage
+\ifthenelse{\equal{\CONFIGEnableTableOfAppendix}{true}}
+{
+    \minitoc % minitoc-Ausgeben 
+    \newpage
+}{}
 
 \renewcommand{\thesection}{\DICTAppendix~\Alph{section}}
 \section{Packed Objects Encoding tables}

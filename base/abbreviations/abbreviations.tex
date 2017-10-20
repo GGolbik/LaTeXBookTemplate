@@ -1,7 +1,10 @@
 % add table of contents entry
-\addcontentsline{toc}{section}{\DICTAbbreviations}
-\chapter*{\DICTAbbreviations}
+\addcontentsline{toc}{chapter}{\DICTAbbreviations}
 
+% update mark for use of \leftmark and \rightmark
+\markboth{\DICTAbbreviations}{\DICTAbbreviations}
+
+\chapter*{\DICTAbbreviations}
 
 % Dazu kann ein Kurzname zwischen der Abkürzung und der Langform angegeben werden (wie z.B. bei I²C). Dies ist nötig bei z.B. mathematischen Zeichen, da in der Abkürzung nur normale Zeichen eingesetzt werden dürfen. Der zugehörige Aufruf sieht wie gewohnt aus: \ac{I2C}, im erzeugten Dokument erscheint für die Abkürzung der Kurzname I²C.
 % Nach \begin{acronym} kann in eckigen Klammern ein Ausdruck angegeben werden. Nach der Länge dieses Ausdrucks wird der Einzug der ausgeschriebenen Abkürzungen gesetzt. Hier empfiehlt es sich, die längste Abkürzung zu verwenden um einen gleichmäßigen Einzug bei allen Abkürzungen zu erhalten.

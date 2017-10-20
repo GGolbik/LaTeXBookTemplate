@@ -21,11 +21,11 @@
 % change page numbering to arabic and start by page 1
 \pagenumbering{Roman}
 
-% Cover page
+% Title page
 %--------------------------------------
-\ifthenelse{\equal{\CONFIGEnableCoverSheet}{true}}
+\ifthenelse{\equal{\CONFIGEnableTitlePage}{true}}
 {
-    \input{base/coversheet/coversheet}
+    \input{base/titlepage/titlepage}
     \setcounter{page}{2}
 }{}
 %--------------------------------------
@@ -48,9 +48,14 @@
 }{}
 
 \ifthenelse{\equal{\CONFIGEnableDisclaimer}{true}}
-{}{
-    \phantom{}
+{
     \vfill
+}{
+    \ifthenelse{\equal{\CONFIGEnableCopyright}{true}}
+    {
+        \phantom{}
+        \vfill
+    }{}
 }
 
 \ifthenelse{\equal{\CONFIGEnableCopyright}{true}}

@@ -4,8 +4,11 @@
 \renewcommand{\lstlistingname}{\DICTListingName}
 
 % add table of contents entry
-\addcontentsline{toc}{section}{\DICTListOfCodeSnippets}
+\addcontentsline{toc}{chapter}{\DICTListOfCodeSnippets}
 
 % List of Listings -> List of Algorithms
 \renewcommand{\lstlistlistingname}{\DICTListOfCodeSnippets}
 \lstlistoflistings
+
+% update mark for use of \leftmark and \rightmark
+\markboth{\DICTListOfCodeSnippets}{\DICTListOfCodeSnippets}

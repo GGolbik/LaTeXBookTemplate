@@ -1,6 +1,9 @@
 % add table of contents entry
-\addcontentsline{toc}{section}{\DICTTableOfContents}
-
+\addcontentsline{toc}{chapter}{\DICTTableOfContents}
 % Rename name of table of contents
 \renewcommand\contentsname{\DICTTableOfContents}
-\tableofcontents 
+
+% update mark for use of \leftmark and \rightmark
+\markboth{\DICTTableOfContents}{\DICTTableOfContents}
+
+\tableofcontents

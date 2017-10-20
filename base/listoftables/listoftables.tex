@@ -1,8 +1,11 @@
 \setcounter{tocdepth}{3}
 
 % add table of contents entry
-\addcontentsline{toc}{section}{\DICTListOfTables}
+\addcontentsline{toc}{chapter}{\DICTListOfTables}
 
 \renewcommand{\listtablename}{\DICTListOfTables}
 \renewcommand{\tablename}{\DICTTableName}
 \listoftables
+
+% update mark for use of \leftmark and \rightmark
+\markboth{\DICTListOfTables}{\DICTListOfTables}

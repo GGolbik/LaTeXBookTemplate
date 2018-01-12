@@ -19,7 +19,8 @@
 
 \ifthenelse{\equal{\CONFIGEnableTableOfAppendix}{true}}
 {
-    \minitoc % minitoc-Ausgeben 
+    \vspace{-10mm}
+    \minitoc % minitoc-Ausgeben
     \newpage
 }{}
 
@@ -27,7 +28,11 @@
 
 % include appendix content
 %--------------------------------------
-\input{base/appendix/appendixcontent}
+\IfFileExists{contents/\CONFIGLanguage/contents}{
+    \input{base/appendix/\CONFIGLanguage}
+}{false-branch
+    Content: UNSUPPORTED LANGUAGE ,,\CONFIGLanguage ``
+}
 %--------------------------------------
 
 \addtocontents{toc}{\protect\setcounter{tocdepth}{3}}

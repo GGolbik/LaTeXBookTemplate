@@ -1,7 +1,7 @@
 %\ifthenelse{\equal{\CONFIGLanguage}{twoside}}
 %    {\input{base/headerfooter/twoside}}
 %    {\input{base/headerfooter/oneside}}
-    
+
 \pagestyle{fancy}
 
 \fancyhf{}
@@ -17,12 +17,12 @@
 \ifthenelse{\equal{\CONFIGOneTwoSided}{oneside}}
     {
         \fancyhead[L]{\includegraphics[width=5mm]{\IMGHeader}}
-        \fancyhead[R]{\DICTDocTitle}
+        \fancyhead[R]{\MakeUppercase{\leftmark}}
         \fancyhead[C]{}
     }
     {
         \fancyhead[RE,LO]{\includegraphics[width=5mm]{\IMGHeader}}
-        \fancyhead[LE,RO]{\DICTDocTitle}
+        \fancyhead[LE,RO]{\MakeUppercase{\leftmark}}
         \fancyhead[CE,CO]{}
     }
 
@@ -55,23 +55,23 @@
 
 \fancypagestyle{plain}{%
     \fancyhf{}
-    
+
     % set header
     %--------------------------------------
     \ifthenelse{\equal{\CONFIGOneTwoSided}{oneside}}
     {
         \fancyhead[L]{\includegraphics[width=5mm]{\IMGHeader}}
-        \fancyhead[R]{\DICTDocTitle}
+        \fancyhead[R]{\MakeUppercase{\leftmark}}
         \fancyhead[C]{}
     }
     {
         \fancyhead[RE,LO]{\includegraphics[width=5mm]{\IMGHeader}}
-        \fancyhead[LE,RO]{\DICTDocTitle}
+        \fancyhead[LE,RO]{\MakeUppercase{\leftmark}}
         \fancyhead[CE,CO]{}
     }
     %--------------------------------------
-    
-    
+
+
     % set footer
     %--------------------------------------
     \ifthenelse{\equal{\CONFIGOneTwoSided}{oneside}}

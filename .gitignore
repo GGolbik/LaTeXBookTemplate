@@ -1,1 +1,5 @@
 /.project
+/build.properties
+/target
+/.idea
+main.pdf

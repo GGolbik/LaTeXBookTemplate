@@ -1,0 +1,5 @@
+{
+  "root" : "main.tex",
+  "toolchain" : "%TEX %ARG %DOC && %BIB %DOC && %TEX %ARG %DOC && %TEX %ARG %DOC",
+  "latex_ext": [".tikz", ".Rnw"]
+}

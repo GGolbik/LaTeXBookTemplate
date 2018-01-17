@@ -2,11 +2,42 @@
 LaTeX template for books, manuals, documentations, etc.
 
 ## Compiling
-This LaTeX document is tested on [ShareLaTeX](https://www.sharelatex.com/).
 
-The used compiler is **XeLaTeX**.
+This LaTeX document is tested with the following tools
+1. **[ShareLaTeX](https://www.sharelatex.com/)**
+2. with the **[Atom](https://atom.io/)** editor in combination with **[Tex Live](http://www.tug.org/texlive/)** on Debian 9
 
-The main document is **main.tex**.
+### ShareLaTeX
+
+* The used compiler is **XeLaTeX**.
+* The main document is **main.tex**.
+
+### Atom and TeX Live
+
+#### TeX Live installation
+
+Install TeX Live with the required packages. Therefore execute the below command
+```
+apt-get install texlive texlive-xetex texlive-lang-german texlive-bibtex-extra biber latexmk
+```
+#### Atom installation
+To build with the [Atom](https://atom.io/) editor on Debian 9 "Stretch" you have to execute the below steps.
+
+1. Download the .deb package from https://atom.io/
+2. Install atom with the command
+```
+dpkg -i /path/to/deb/file/atom-amd64.deb
+```
+3. Run Atom and install the packages
+    * `atom-latex`
+        * v0.8.2 There is a known issue on UNIX systems https://github.com/James-Yu/Atom-LaTeX/issues/110.
+        Therefore you have to edit the file `/home/<user>/.atom/packages/atom-latex/lib/builder.coffee` in line 66 from `@buildErrs += data` to `@buildErrs[@buildErrs.length - 1] += data`
+    * `language-latex`
+4. Open the `atom-latex` package settings and change
+    * `LaTeX compiler to use` to `xelatex`
+    * `BibTex compiler to use` to `biber`
+    * Add to the default values of `Files to clean` the file extensions `*.xml, *.gz, *.atfi, *.bcf, *.maf, *mtc*, *.ilg, *.lol`
+    * make sure that `Clean LaTeX auxiliary files after building process` is enabled.
 
 ## One-/Two-sided
 
@@ -68,14 +99,13 @@ The language can be set in [config/config.tex](https://github.com/GGerry/GGLaTeX
 
 * 1.0.0
     * First Release
-
 * 1.+
     * New
         * Added multi language support for appendix
         * Replaced document title in page header with uppercase chapter name
-
+        * Added description and project file to build with Atom editor and TeX Live
     * Improvement
         * Reduced vertical space between appendix headline and table of appendix.
         * Renamed appendix example entries
-
     * Bugfix
+        * None

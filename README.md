@@ -24,7 +24,7 @@ apt-get install texlive texlive-xetex texlive-lang-german texlive-bibtex-extra b
 To build with the [Atom](https://atom.io/) editor on Debian 9 "Stretch" you have to execute the below steps.
 
 1. Download the .deb package from https://atom.io/
-2. Install atom with the command
+2. Install Atom with the command
 ```
 dpkg -i /path/to/deb/file/atom-amd64.deb
 ```
@@ -49,6 +49,11 @@ The language can be set in [config/config.tex](https://github.com/GGerry/GGLaTeX
 
 ### Sections
 
+#### Appendix
+* To add a new language you have to create
+    * a new file in [base/appendix](https://github.com/GGerry/GGLaTeXBookTemplate/tree/master/base/appendix). The name of the file must be the language code e.g. **FR** for French + the file extension **.tex**
+* Syntax: base/appendix/&lt;language code&gt;.tex
+
 #### Contents
 * To add a new language you have to create
     * a new directory in [contents](https://github.com/GGerry/GGLaTeXBookTemplate/tree/master/contents). The name of the directory must be the language code e.g. **FR** for French.
@@ -70,10 +75,38 @@ The language can be set in [config/config.tex](https://github.com/GGerry/GGLaTeX
     * a new file in [base/disclaimer](https://github.com/GGerry/GGLaTeXBookTemplate/tree/master/base/disclaimer). The name of the file must be the language code e.g. **FR** for French + the file extension **.tex**
 * Syntax: base/disclaimer/&lt;language code&gt;.tex
 
-#### Appendix
-* To add a new language you have to create
-    * a new file in [base/appendix](https://github.com/GGerry/GGLaTeXBookTemplate/tree/master/base/appendix). The name of the file must be the language code e.g. **FR** for French + the file extension **.tex**
-* Syntax: base/appendix/&lt;language code&gt;.tex
+## Enable / Disable Sections
+You can decide to include or exclude the below sections. By default all sections are included. If you wish to exclude a section you have to replace `true` with `false` in [config/config.tex](https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/config/config.tex) for the desired section. (see line 7-18)
+* Title Page
+* Disclaimer text (If disclaimer and copyright is exluded the entire page is removed)
+* Copyright text  (If copyright and disclaimer is exluded the entire page is removed)
+* Table of Contents
+* List of Figures
+* List of Tables
+* List of Snippets/Listings
+* List of Abbreviations
+* Appendix
+* Table of Appendix (If appendix is excluded the table of appendix will excluded, too)
+* References Page
+* Index
+
+## Images
+
+If you want to add an image i advise to do the below steps.
+* copy the image to the `images` folder in the project root directory.
+* Create a definition for the image path in `config/images.tex` e.g. `\def\IMGExampleImage{images/path/to/file/name.png}`
+* To use the image in the document write `\includegraphics{\IMGExampleImage}`
+
+## Colors
+
+If you wish to use a none standard color you should at the definiton in [config/colors.tex](https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/config/colors.tex)
+
+## Code Snippets / Listings
+
+The styles for the listings are defined in [config/lstdefinestyle.tex](https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/config/lstdefinestyle.tex). If you want to add an code snippet i advise to do the below steps.
+* copy the file with the code to the `snippets` folder in the project root directory.
+* Create a definition for the image path in `config/snippets.tex` e.g. `\def\SNIPPETExample{snippets/path/to/file/name.html}`
+* To use the snippet in the document write `\lstinputlisting[language=bash, style=customStyleHTMLDark, caption=Snippet title]{\SNIPPETExample}`
 
 ## 3rd Party
 

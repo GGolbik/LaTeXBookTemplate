@@ -108,4 +108,4 @@ The language can be set in [config/config.tex](https://github.com/GGerry/GGLaTeX
         * Reduced vertical space between appendix headline and table of appendix.
         * Renamed appendix example entries
     * Bugfix
-        * None
+        * Now line breaks will work for long URLs, too.

@@ -12,6 +12,14 @@
 % being document
 \begin{document}
 
+% Change numbering for listings. If true the number will be not affected by the chapter number.
+%--------------------------------------
+\ifthenelse{\equal{\CONFIGCounterWithoutChapter}{true}}
+{
+    \counterwithout{lstlisting}{chapter}
+}{}
+%--------------------------------------
+
 %required for appendix
 \dominitoc
 
@@ -106,7 +114,7 @@
 %--------------------------------------
 \ifthenelse{\equal{\CONFIGEnableListOfSnippets}{true}}
 {
-    \input{base/lstlistoflistings/lstlistoflistings}  
+    \input{base/lstlistoflistings/lstlistoflistings}
     \newpage
 }{}
 %--------------------------------------
@@ -115,7 +123,7 @@
 %--------------------------------------
 \ifthenelse{\equal{\CONFIGEnableListOfAbbreviations}{true}}
 {
-    \input{base/abbreviations/abbreviations}  
+    \input{base/abbreviations/abbreviations}
     \newpage
 }{}
 %--------------------------------------
@@ -125,7 +133,7 @@
 
 % Header & footer
 %--------------------------------------
-\input{base/headerfooter/headerfooter}  
+\input{base/headerfooter/headerfooter}
 %--------------------------------------
 
 % Content
@@ -138,7 +146,7 @@
 \ifthenelse{\equal{\CONFIGEnableAppendix}{true}}
 {
     \input{base/appendix/appendix}
-    
+
     \ifthenelse{\equal{\CONFIGEnableReferences}{true}}
     {
         \newpage
@@ -156,7 +164,7 @@
 \ifthenelse{\equal{\CONFIGEnableReferences}{true}}
 {
     \input{base/bibliography/bibliography}
-    
+
     \ifthenelse{\equal{\CONFIGEnableIndex}{true}}
     {
         \newpage

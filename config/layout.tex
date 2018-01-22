@@ -129,6 +129,17 @@
 \input{config/snippets}
 %--------------------------------------
 
+% Change numbering for figures and tables. If true the number will be not affected by the chapter number.
+%--------------------------------------
+\ifthenelse{\equal{\CONFIGCounterWithoutChapter}{true}}
+{
+    \usepackage{chngcntr}
+    \counterwithout{figure}{chapter}
+    \counterwithout{table}{chapter}
+    % \counterwithout{lstlisting}{chapter} is specified in main.tex
+}{}
+%--------------------------------------
+
 % Abbreviations
 %--------------------------------------
 \usepackage[printonlyused]{acronym}

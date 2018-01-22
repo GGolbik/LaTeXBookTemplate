@@ -86,9 +86,13 @@ You can decide to include or exclude the below sections. By default all sections
 * List of Snippets/Listings
 * List of Abbreviations
 * Appendix
-* Table of Appendix (If appendix is excluded the table of appendix will excluded, too)
+* Table of Appendix (If appendix is excluded the table of appendix will be excluded, too.)
 * References Page
 * Index
+
+## Counter of figures, tables and lstlisting
+
+You can decide if the counter of figures, tables lstlisting will be affected by the chapter number. By default the counter is affected by the chapter number. If you wish to change this behavior you have to replace `false` with `true` in [config/config.tex](https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/config/config.tex). (see line 21)
 
 ## Images
 
@@ -134,11 +138,12 @@ The styles for the listings are defined in [config/lstdefinestyle.tex](https://g
     * First Release
 * 1.+
     * New
-        * Added multi language support for appendix
-        * Replaced document title in page header with uppercase chapter name
-        * Added description and project file to build with Atom editor and TeX Live
+        * Added multi language support for appendix.
+        * Replaced document title in page header with uppercase chapter name.
+        * Added description and project file to build with Atom editor and TeX Live.
+        * Added possibility to change counter of figures, tables and lstlisting.
     * Improvement
         * Reduced vertical space between appendix headline and table of appendix.
-        * Renamed appendix example entries
+        * Renamed appendix example entries.
     * Bugfix
         * Now line breaks will work for long URLs, too.

@@ -1,6 +1,9 @@
 # GGLaTeXBookTemplate
 LaTeX template for books, manuals, documentations, etc.
 
+## Release Notes
+You will find the release notes in the [CHANGELOG.md](https://github.com/GGolbik/GGLaTeXBookTemplate/blob/master/CHANGELOG.md)
+
 ## Compiling
 
 This LaTeX document is tested with the following tools
@@ -131,19 +134,3 @@ The styles for the listings are defined in [config/lstdefinestyle.tex](https://g
 * images/content/ben-kolde-367194.jpg
     * Source: [Unsplash](https://unsplash.com/photos/lqZPleZ4ERA)
     * License: [do whatever you want](https://unsplash.com/license)
-
-## Release Notes
-
-* 1.0.0
-    * First Release
-* 1.+
-    * New
-        * Added multi language support for appendix.
-        * Replaced document title in page header with uppercase chapter name.
-        * Added description and project file to build with Atom editor and TeX Live.
-        * Added possibility to change counter of figures, tables and lstlisting.
-    * Improvement
-        * Reduced vertical space between appendix headline and table of appendix.
-        * Renamed appendix example entries.
-    * Bugfix
-        * Now line breaks will work for long URLs, too.

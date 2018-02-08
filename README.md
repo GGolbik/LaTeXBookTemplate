@@ -8,7 +8,7 @@ You will find the release notes in the [CHANGELOG.md](https://github.com/GGolbik
 
 This LaTeX document is tested with the following tools
 1. **[ShareLaTeX](https://www.sharelatex.com/)**
-2. with the **[Atom](https://atom.io/)** editor in combination with **[Tex Live](http://www.tug.org/texlive/)** on Debian 9
+2. **[Atom](https://atom.io/)** editor in combination with **[Tex Live](http://www.tug.org/texlive/)** on Debian 9
 
 ### ShareLaTeX
 
@@ -110,9 +110,9 @@ If you wish to use a none standard color you should at the definiton in [config/
 
 ## Code Snippets / Listings
 
-The styles for the listings are defined in [config/lstdefinestyle.tex](https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/config/lstdefinestyle.tex). If you want to add an code snippet i advise to do the below steps.
+The styles for the listings are defined in [config/lstdefinestyle.tex](https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/config/lstdefinestyle.tex). If you want to add a code snippet i advise to do the below steps.
 * copy the file with the code to the `snippets` folder in the project root directory.
-* Create a definition for the image path in `config/snippets.tex` e.g. `\def\SNIPPETExample{snippets/path/to/file/name.html}`
+* Create a definition for the code path in `config/snippets.tex` e.g. `\def\SNIPPETExample{snippets/path/to/file/name.html}`
 * To use the snippet in the document write `\lstinputlisting[language=bash, style=customStyleHTMLDark, caption=Snippet title]{\SNIPPETExample}`
 
 ## 3rd Party

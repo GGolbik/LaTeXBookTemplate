@@ -9,10 +9,31 @@
 \captionof{figure}{Example Image 1}
 
 \subsection{Example Image 2}
-  
+
 \includegraphics[width=\linewidth]{\IMGExampleTwo}
 \captionof{figure}{Example Image 2}
 \label{figure:anime}
 
-You can reference images, for instance, the image \ref{figure:anime} shows 
+You can reference images, for instance, the image \ref{figure:anime} shows
 an image from \textit{unsplash}
+
+\subsection{Images Side by Side}
+
+\begin{figure}[htbp]
+  \centering
+  \begin{minipage}[b]{0.45\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{\IMGExampleTwo}
+    \caption{The caption for figure 1}
+    \label{fig:chapter001_dist_001}
+  \end{minipage}
+  \hspace{0.5cm}
+  \begin{minipage}[b]{0.45\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{\IMGExampleTwo}
+    \caption{The caption for figure 2.}
+    \label{fig:chapter001_reward_001}
+  \end{minipage}
+\end{figure}
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.

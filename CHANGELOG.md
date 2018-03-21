@@ -9,9 +9,11 @@ All notable changes to this project will be documented in this file.
 * Added possibility to change counter of figures, tables and lstlisting.
 * Added styles for python code.
 * Added example to place images side by side.
+* Added examples for footnotes
 ### Changed
 * Reduced vertical space between appendix headline and table of appendix.
 * Renamed appendix example entries.
+* Change footnote citation style
 ### Deprecated
 ### Removed
 ### Fixed

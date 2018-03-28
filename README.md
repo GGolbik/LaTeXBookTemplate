@@ -46,13 +46,13 @@ dpkg -i /path/to/deb/file/atom-amd64.deb
 
 The document style can be changed from one-sided to two-sided using the **documentclass** property in [main.tex](https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/main.tex) line 6
 
-## Language Support
-
-The language can be set in [config/config.tex](https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/config/config.tex) line 4
-
 ## Font Family
 The preferred font family can be set in
 [config/config.tex](https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/config/config.tex). (see line 7)
+
+## Language Support
+
+The language can be set in [config/config.tex](https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/config/config.tex) line 4
 
 ### Sections
 

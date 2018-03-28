@@ -50,6 +50,10 @@ The document style can be changed from one-sided to two-sided using the **docume
 
 The language can be set in [config/config.tex](https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/config/config.tex) line 4
 
+## Font Family
+The preferred font family can be set in
+[config/config.tex](https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/config/config.tex). (see line 7)
+
 ### Sections
 
 #### Appendix
@@ -79,7 +83,7 @@ The language can be set in [config/config.tex](https://github.com/GGerry/GGLaTeX
 * Syntax: base/disclaimer/&lt;language code&gt;.tex
 
 ## Enable / Disable Sections
-You can decide to include or exclude the below sections. By default all sections are included. If you wish to exclude a section you have to replace `true` with `false` in [config/config.tex](https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/config/config.tex) for the desired section. (see line 7-18)
+You can decide to include or exclude the below sections. By default all sections are included. If you wish to exclude a section you have to replace `true` with `false` in [config/config.tex](https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/config/config.tex) for the desired section. (see line 9-20)
 * Title Page
 * Disclaimer text (If disclaimer and copyright is exluded the entire page is removed)
 * Copyright text  (If copyright and disclaimer is exluded the entire page is removed)

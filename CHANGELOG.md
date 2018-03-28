@@ -10,12 +10,18 @@ All notable changes to this project will be documented in this file.
 * Added styles for python code.
 * Added example to place images side by side.
 * Added examples for footnotes
+* Added soul package for text decoration with underlined text example.
+* Added fonts NotoSans, NotoSerif, NotoSerifCJKjp.
+* Added property in config to change font family.
+* Added lorem ipsum text.
 ### Changed
 * Reduced vertical space between appendix headline and table of appendix.
 * Renamed appendix example entries.
 * Change footnote citation style
+* Change font style to Noto Serif
 ### Deprecated
 ### Removed
+* Removed unnecessary font files.
 ### Fixed
 * Now line breaks will work for long URLs, too.
 ### Security

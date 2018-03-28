@@ -4,29 +4,29 @@
 %--------------------------------------
 % see https://de.sharelatex.com/learn/Page_size_and_margins
 \ifthenelse{\equal{\CONFIGOneTwoSided}{oneside}}
-    {
-        \usepackage{geometry}\geometry{
-            a4paper, % a4 size 210x297 mm
-            left=35mm,
-            right=20mm,
-            top=35mm,
-            bottom=25mm,
-            footskip=10mm,
-            headheight=20mm % required for header
-        }
+{
+    \usepackage{geometry}\geometry{
+        a4paper, % a4 size 210x297 mm
+        left=35mm,
+        right=20mm,
+        top=35mm,
+        bottom=25mm,
+        footskip=10mm,
+        headheight=20mm % required for header
     }
-    {
-        \usepackage{geometry}\geometry{
-            a4paper, % a4 size 210x297 mm
-            twoside,
-            left=35mm,
-            right=20mm,
-            top=35mm,
-            bottom=25mm,
-            footskip=10mm,
-            headheight=20mm % required for header
-        }
+}
+{
+    \usepackage{geometry}\geometry{
+        a4paper, % a4 size 210x297 mm
+        twoside,
+        left=35mm,
+        right=20mm,
+        top=35mm,
+        bottom=25mm,
+        footskip=10mm,
+        headheight=20mm % required for header
     }
+}
 %--------------------------------------
 
 % reduce chapter margin
@@ -40,26 +40,56 @@
 % font
 %--------------------------------------
 \usepackage{fontspec}
-\setmainfont[ExternalLocation=fonts/Roboto/,
-    BoldFont = Roboto-Bold.ttf,
-    ItalicFont = Roboto-Italic.ttf ,
-    BoldItalicFont = Roboto-BoldItalic.ttf]{Roboto-Regular.ttf}
+
+\ifthenelse{\equal{\CONFIGFontFamily}{Roboto}}
+{
+    \setmainfont[ExternalLocation=fonts/Roboto/,
+        BoldFont = Roboto-Bold.ttf,
+        ItalicFont = Roboto-Italic.ttf ,
+        BoldItalicFont = Roboto-BoldItalic.ttf]{Roboto-Regular.ttf}
+}{}
+
+\ifthenelse{\equal{\CONFIGFontFamily}{NotoSans}}
+{
+    \setmainfont[ExternalLocation=fonts/NotoSans/,
+        BoldFont = NotoSans-Bold.ttf,
+        ItalicFont = NotoSans-Italic.ttf ,
+        BoldItalicFont = NotoSans-BoldItalic.ttf]{NotoSans-Regular.ttf}
+}{}
+
+\ifthenelse{\equal{\CONFIGFontFamily}{NotoSerif}}
+{
+    \setmainfont[ExternalLocation=fonts/NotoSerif/,
+        BoldFont = NotoSerif-Bold.ttf,
+        ItalicFont = NotoSerif-Italic.ttf ,
+        BoldItalicFont = NotoSerif-BoldItalic.ttf]{NotoSerif-Regular.ttf}
+}{}
 % language Japanese
-    %--------------------------------------
+%--------------------------------------
     \usepackage{xeCJK}
-    \setCJKmainfont[ExternalLocation=fonts/NotoSansCJKjp/,
-        BoldFont = NotoSansCJKjp-Bold.otf]{NotoSansCJKjp-Regular.otf}
-    %--------------------------------------
+    \setCJKmainfont[ExternalLocation=fonts/NotoSerifCJKjp/,
+        BoldFont = NotoSerifCJKjp-Bold.otf]{NotoSerifCJKjp-Regular.otf}
+    \ifthenelse{\equal{\CONFIGFontFamily}{NotoSans}}
+    {
+        \setCJKmainfont[ExternalLocation=fonts/NotoSansCJKjp/,
+            BoldFont = NotoSansCJKjp-Bold.otf]{NotoSansCJKjp-Regular.otf}
+    }{}
+    \ifthenelse{\equal{\CONFIGFontFamily}{NotoSerif}}
+    {
+        \setCJKmainfont[ExternalLocation=fonts/NotoSerifCJKjp/,
+            BoldFont = NotoSerifCJKjp-Bold.otf]{NotoSerifCJKjp-Regular.otf}
+    }{}
+%--------------------------------------
 
 % set line height/spacing
 \renewcommand{\baselinestretch}{1.5}
 
 \ifthenelse{\equal{\CONFIGLanguage}{DE}}
-    {
-        % German hyphenation
-        \usepackage[ngerman]{babel}
-        \usepackage{csquotes}
-    }{}
+{
+    % German hyphenation
+    \usepackage[ngerman]{babel}
+    \usepackage{csquotes}
+}{}
 %--------------------------------------
 
 % Remove indentation
@@ -143,6 +173,12 @@
 % Abbreviations
 %--------------------------------------
 \usepackage[printonlyused]{acronym}
+%--------------------------------------
+
+% methods for decorating text
+%--------------------------------------
+\usepackage{soul}
+\setuldepth{Berlin} % adjust the height of the lines
 %--------------------------------------
 
 % Bibliography/References

@@ -99,7 +99,7 @@ You can decide to include or exclude the below sections. By default all sections
 
 ## Counter of figures, tables and lstlisting
 
-You can decide if the counter of figures, tables lstlisting will be affected by the chapter number. By default the counter is affected by the chapter number. If you wish to change this behavior you have to replace `false` with `true` in [config/config.tex](https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/config/config.tex). (see line 21)
+You can decide if the counter of figures, tables lstlisting will be affected by the chapter number. By default the counter is affected by the chapter number. If you wish to change this behavior you have to replace `false` with `true` in [config/config.tex](https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/config/config.tex). (see line 23)
 
 ## Images
 

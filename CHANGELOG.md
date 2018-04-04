@@ -3,6 +3,14 @@ All notable changes to this project will be documented in this file.
 
 ## Unreleased
 ### Added
+### Changed
+### Deprecated
+### Removed
+### Fixed
+### Security
+
+## v1.1.0 - 2018-04-04
+### Added
 * Added multi language support for appendix.
 * Replaced document title in page header with uppercase chapter name.
 * Added description and project file to build with Atom editor and TeX Live.

@@ -126,13 +126,13 @@ The styles for the listings are defined in [config/lstdefinestyle.tex](https://g
 * Noto Serif
     * Source: https://www.google.com/get/noto/#serif-lgc
     * License: [SIL Open Font License, Version 1.1]( https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/fonts/NotoSerif/LICENSE_OFL.txt)
-* Noto Sans
+* Noto Serif CJKjp
     * Source: https://www.google.com/get/noto/#serif-jpan
     * License: [SIL Open Font License, Version 1.1]( https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/fonts/NotoSerifCJKjp/LICENSE_OFL.txt)
 * Noto Sans
     * Source: https://www.google.com/get/noto/#sans-lgc
     * License: [SIL Open Font License, Version 1.1]( https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/fonts/NotoSans/LICENSE_OFL.txt)
-* NotoSansCJKjp
+* Noto Sans CJKjp
     * Source: [Google Noto Fonts](https://www.google.com/get/noto/#sans-jpan)
     * License: [SIL Open Font License, Version 1.1](https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/fonts/NotoSansCJKjp/LICENSE_OFL.txt)
 * Roboto

@@ -116,6 +116,7 @@
 % images
 %--------------------------------------
 \usepackage{graphicx}
+\usepackage{float}
 \input{config/images}
 %--------------------------------------
 
@@ -139,6 +140,12 @@
 \usepackage{fancyhdr}
 \usepackage{lastpage}
 \usepackage{etoolbox}
+%--------------------------------------
+
+% Footnote numbering throughout the whole document
+%--------------------------------------
+\usepackage{chngcntr}
+\counterwithout{footnote}{chapter}
 %--------------------------------------
 
 % Enable linking e.g. for table of contents

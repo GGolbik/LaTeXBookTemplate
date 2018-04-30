@@ -82,6 +82,15 @@
 }
 %--------------------------------------
 
+% Abstract
+%--------------------------------------
+\ifthenelse{\equal{\CONFIGEnableAbstract}{true}}
+{
+    \input{base/abstract/abstract}
+    \newpage
+}{}
+%--------------------------------------
+
 % Table of contents
 %-------------------------------------
 \ifthenelse{\equal{\CONFIGEnableTableOfContents}{true}}

@@ -3,10 +3,15 @@ All notable changes to this project will be documented in this file.
 
 ## Unreleased
 ### Added
+* Added abstract page and configuration to show or hide the page.
+* Added another example for images
 ### Changed
+* Changed name of Listings.
+* Changed name of Abbreviations.
 ### Deprecated
 ### Removed
 ### Fixed
+* Footnote numbering throughout the whole document and not only chapters.
 ### Security
 
 ## v1.1.0 - 2018-04-04

@@ -83,10 +83,11 @@ The language can be set in [config/config.tex](https://github.com/GGerry/GGLaTeX
 * Syntax: base/disclaimer/&lt;language code&gt;.tex
 
 ## Enable / Disable Sections
-You can decide to include or exclude the below sections. By default all sections are included. If you wish to exclude a section you have to replace `true` with `false` in [config/config.tex](https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/config/config.tex) for the desired section. (see line 9-20)
+You can decide to include or exclude the below sections. By default all sections are included. If you wish to exclude a section you have to replace `true` with `false` in [config/config.tex](https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/config/config.tex) for the desired section. (see line 9-21)
 * Title Page
 * Disclaimer text (If disclaimer and copyright is exluded the entire page is removed)
 * Copyright text  (If copyright and disclaimer is exluded the entire page is removed)
+* Abstract
 * Table of Contents
 * List of Figures
 * List of Tables
@@ -99,7 +100,7 @@ You can decide to include or exclude the below sections. By default all sections
 
 ## Counter of figures, tables and lstlisting
 
-You can decide if the counter of figures, tables lstlisting will be affected by the chapter number. By default the counter is affected by the chapter number. If you wish to change this behavior you have to replace `false` with `true` in [config/config.tex](https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/config/config.tex). (see line 23)
+You can decide if the counter of figures, tables lstlisting will be affected by the chapter number. By default the counter is affected by the chapter number. If you wish to change this behavior you have to replace `false` with `true` in [config/config.tex](https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/config/config.tex). (see line 24)
 
 ## Images
 
@@ -122,7 +123,15 @@ The styles for the listings are defined in [config/lstdefinestyle.tex](https://g
 ## 3rd Party
 
 ### Fonts
-
+* Noto Serif
+    * Source: https://www.google.com/get/noto/#serif-lgc
+    * License: [SIL Open Font License, Version 1.1]( https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/fonts/NotoSerif/LICENSE_OFL.txt)
+* Noto Sans
+    * Source: https://www.google.com/get/noto/#serif-jpan
+    * License: [SIL Open Font License, Version 1.1]( https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/fonts/NotoSerifCJKjp/LICENSE_OFL.txt)
+* Noto Sans
+    * Source: https://www.google.com/get/noto/#sans-lgc
+    * License: [SIL Open Font License, Version 1.1]( https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/fonts/NotoSans/LICENSE_OFL.txt)
 * NotoSansCJKjp
     * Source: [Google Noto Fonts](https://www.google.com/get/noto/#sans-jpan)
     * License: [SIL Open Font License, Version 1.1](https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/fonts/NotoSansCJKjp/LICENSE_OFL.txt)

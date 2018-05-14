@@ -217,3 +217,14 @@
 \usepackage[german,nohints]{minitoc}
 \usepackage{titletoc}
 %--------------------------------------
+
+% Glossary
+%--------------------------------------
+\usepackage[nonumberlist]{glossaries}
+\makeglossaries
+\IfFileExists{base/glossary/\CONFIGLanguage}{
+    \loadglsentries{base/glossary/\CONFIGLanguage}
+}{
+    GLOSSARY: UNSUPPORTED LANGUAGE ,,\CONFIGLanguage ``
+}
+%--------------------------------------

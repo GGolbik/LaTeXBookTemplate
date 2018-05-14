@@ -137,6 +137,16 @@
 }{}
 %--------------------------------------
 
+
+% Glossary
+%--------------------------------------
+\ifthenelse{\equal{\CONFIGEnableGlossary}{true}}
+{
+    \input{base/glossary/glossary}
+    \newpage
+}{}
+%-------------------------------------- 
+
 % change page numbering to arabic and start by page 1
 \pagenumbering{arabic}
 

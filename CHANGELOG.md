@@ -5,9 +5,9 @@ All notable changes to this project will be documented in this file.
 ### Added
 * Added abstract page and configuration to show or hide the page.
 * Added another example for images
+* Added glossary as well as a property to enable and disable it.
 ### Changed
 * Changed name of Listings.
-* Changed name of Abbreviations.
 ### Deprecated
 ### Removed
 ### Fixed

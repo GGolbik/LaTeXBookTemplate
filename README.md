@@ -39,7 +39,7 @@ dpkg -i /path/to/deb/file/atom-amd64.deb
 4. Open the `atom-latex` package settings and change
     * `LaTeX compiler to use` to `xelatex`
     * `BibTex compiler to use` to `biber`
-    * Add to the default values of `Files to clean` the file extensions `*.xml, *.gz, *.atfi, *.bcf, *.maf, *mtc*, *.ilg, *.lol`
+    * Add to the default values of `Files to clean` the file extensions `*.xml, *.gz, *.atfi, *.bcf, *.maf, *mtc*, *.ilg, *.lol, *.glsdefs`
     * make sure that `Clean LaTeX auxiliary files after building process` is enabled.
 
 ## One-/Two-sided
@@ -82,8 +82,14 @@ The language can be set in [config/config.tex](https://github.com/GGerry/GGLaTeX
     * a new file in [base/disclaimer](https://github.com/GGerry/GGLaTeXBookTemplate/tree/master/base/disclaimer). The name of the file must be the language code e.g. **FR** for French + the file extension **.tex**
 * Syntax: base/disclaimer/&lt;language code&gt;.tex
 
+#### Glossary
+* The entries can written in [base/glossary/EN.tex](https://github.com/GGerry/GGLaTeXBookTemplate/tree/master/base/glossary/gglossary.tex)
+* To add a new language you have to create
+    * a new file in [base/glossary](https://github.com/GGerry/GGLaTeXBookTemplate/tree/master/base/glossary). The name of the file must be the language code e.g. **FR** for French + the file extension **.tex**
+* Syntax: base/glossary/&lt;language code&gt;.tex
+
 ## Enable / Disable Sections
-You can decide to include or exclude the below sections. By default all sections are included. If you wish to exclude a section you have to replace `true` with `false` in [config/config.tex](https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/config/config.tex) for the desired section. (see line 9-21)
+You can decide to include or exclude the below sections. By default all sections are included. If you wish to exclude a section you have to replace `true` with `false` in [config/config.tex](https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/config/config.tex) for the desired section. (see line 9-22)
 * Title Page
 * Disclaimer text (If disclaimer and copyright is exluded the entire page is removed)
 * Copyright text  (If copyright and disclaimer is exluded the entire page is removed)
@@ -91,8 +97,9 @@ You can decide to include or exclude the below sections. By default all sections
 * Table of Contents
 * List of Figures
 * List of Tables
-* List of Snippets/Listings
-* List of Abbreviations
+* Listings
+* Abbreviations
+* Glossary
 * Appendix
 * Table of Appendix (If appendix is excluded the table of appendix will be excluded, too.)
 * References Page
@@ -100,7 +107,7 @@ You can decide to include or exclude the below sections. By default all sections
 
 ## Counter of figures, tables and lstlisting
 
-You can decide if the counter of figures, tables lstlisting will be affected by the chapter number. By default the counter is affected by the chapter number. If you wish to change this behavior you have to replace `false` with `true` in [config/config.tex](https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/config/config.tex). (see line 24)
+You can decide if the counter of figures, tables lstlisting will be affected by the chapter number. By default the counter is affected by the chapter number. If you wish to change this behavior you have to replace `false` with `true` in [config/config.tex](https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/config/config.tex). (see line 25)
 
 ## Images
 

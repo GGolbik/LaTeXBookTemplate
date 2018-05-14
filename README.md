@@ -83,7 +83,6 @@ The language can be set in [config/config.tex](https://github.com/GGerry/GGLaTeX
 * Syntax: base/disclaimer/&lt;language code&gt;.tex
 
 #### Glossary
-* The entries can written in [base/glossary/EN.tex](https://github.com/GGerry/GGLaTeXBookTemplate/tree/master/base/glossary/gglossary.tex)
 * To add a new language you have to create
     * a new file in [base/glossary](https://github.com/GGerry/GGLaTeXBookTemplate/tree/master/base/glossary). The name of the file must be the language code e.g. **FR** for French + the file extension **.tex**
 * Syntax: base/glossary/&lt;language code&gt;.tex
@@ -99,7 +98,7 @@ You can decide to include or exclude the below sections. By default all sections
 * List of Tables
 * Listings
 * Abbreviations
-* Glossary
+* Glossary (The entries can be set in [base/glossary/EN.tex](https://github.com/GGerry/GGLaTeXBookTemplate/tree/master/base/glossary/gglossary.tex))
 * Appendix
 * Table of Appendix (If appendix is excluded the table of appendix will be excluded, too.)
 * References Page

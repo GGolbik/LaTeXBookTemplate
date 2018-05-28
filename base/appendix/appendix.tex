@@ -20,7 +20,7 @@
 \ifthenelse{\equal{\CONFIGEnableTableOfAppendix}{true}}
 {
     \vspace{-10mm}
-    \minitoc % minitoc-Ausgeben
+    \minitoc % show minitoc
     \newpage
 }{}
 
@@ -30,7 +30,7 @@
 %--------------------------------------
 \IfFileExists{contents/\CONFIGLanguage/contents}{
     \input{base/appendix/\CONFIGLanguage}
-}{false-branch
+}{
     Content: UNSUPPORTED LANGUAGE ,,\CONFIGLanguage ``
 }
 %--------------------------------------

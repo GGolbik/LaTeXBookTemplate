@@ -1,7 +1,15 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## Unreleased
+## Unreleased - yyyy-MM-dd
+### Added
+### Changed
+### Deprecated
+### Removed
+### Fixed
+### Security
+
+## v1.2.0 - 2018-05-28
 ### Added
 * Added abstract page and configuration to show or hide the page.
 * Added another example for images
@@ -10,8 +18,10 @@ All notable changes to this project will be documented in this file.
 * Changed name of Listings.
 ### Deprecated
 ### Removed
+* Removed unnecessary text.
 ### Fixed
 * Footnote numbering throughout the whole document and not only chapters.
+* Linking to chapters.
 ### Security
 
 ## v1.1.0 - 2018-04-04
@@ -40,9 +50,4 @@ All notable changes to this project will be documented in this file.
 ### Security
 
 ## v1.0.0 - 2018-01-10
-### Added
-### Changed
-### Deprecated
-### Removed
-### Fixed
-### Security
+First Release

@@ -1,14 +1,11 @@
 % Use the below command to add references
 % \cite{name of reference}
 
-% Required for table of contents
-\addstarredchapter{\DICTReferences}
-
 % update mark for use of \leftmark and \rightmark
 \markboth{\DICTReferences}{\DICTReferences}
 
 % to avoid the warning: Overfull \hbox
-\emergencystretch=1em 
+\emergencystretch=1em
 
 % show all entries even the once which are not used
 %\nocite{*}
@@ -16,3 +13,5 @@
 \printbibliography[title={\DICTReferences}
 %,heading=bibnumbered
 ]
+% Required for table of contents
+\addstarredchapter{\DICTReferences}

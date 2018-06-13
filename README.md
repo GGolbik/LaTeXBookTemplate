@@ -39,7 +39,7 @@ dpkg -i /path/to/deb/file/atom-amd64.deb
 4. Open the `atom-latex` package settings and change
     * `LaTeX compiler to use` to `xelatex`
     * `BibTex compiler to use` to `biber`
-    * Add to the default values of `Files to clean` the file extensions `*.xml, *.gz, *.atfi, *.bcf, *.maf, *mtc*, *.ilg, *.lol, *.glsdefs`
+    * Add to the default values of `Files to clean` the file extensions `*.run.xml, *.gz, *.atfi, *.bcf, *.maf, *mtc*, *.ilg, *.lol, *.glsdefs`
     * make sure that `Clean LaTeX auxiliary files after building process` is enabled.
 
 ## One-/Two-sided

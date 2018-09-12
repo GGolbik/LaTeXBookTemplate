@@ -4,6 +4,7 @@ All notable changes to this project will be documented in this file.
 ## Unreleased - yyyy-MM-dd
 ### Added
 ### Changed
+* Removed (red/green) border from links.
 ### Deprecated
 ### Removed
 ### Fixed

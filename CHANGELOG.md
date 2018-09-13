@@ -9,6 +9,7 @@ All notable changes to this project will be documented in this file.
 ### Deprecated
 ### Removed
 ### Fixed
+* Page numbering of table of contents
 ### Security
 
 ## v1.2.0 - 2018-05-28

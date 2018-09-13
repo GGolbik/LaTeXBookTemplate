@@ -3,6 +3,7 @@ All notable changes to this project will be documented in this file.
 
 ## Unreleased - yyyy-MM-dd
 ### Added
+* Added font Computer Modern Unicode Serif
 ### Changed
 * Removed (red/green) border from links.
 ### Deprecated

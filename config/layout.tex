@@ -64,6 +64,13 @@
         ItalicFont = NotoSerif-Italic.ttf ,
         BoldItalicFont = NotoSerif-BoldItalic.ttf]{NotoSerif-Regular.ttf}
 }{}
+\ifthenelse{\equal{\CONFIGFontFamily}{CMUSerif}}
+{
+    \setmainfont[ExternalLocation=fonts/CMUSerif/,
+        BoldFont = cmunbx.ttf,
+        ItalicFont = cmunti.ttf,
+        BoldItalicFont = cmunbi.ttf]{cmunrm.ttf}
+}{}
 % language Japanese
 %--------------------------------------
     \usepackage{xeCJK}

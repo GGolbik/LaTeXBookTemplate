@@ -144,6 +144,9 @@ The styles for the listings are defined in [config/lstdefinestyle.tex](https://g
 * Roboto
     * Source: [Google Fonts](https://fonts.google.com/specimen/Roboto?selection.family=Roboto)
     * License: [Apache License 2.0](https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/fonts/Roboto/LICENSE.txt)
+* Computer Modern Unicode Serif
+    * Source https://www.fontsquirrel.com/fonts/computer-modern
+    * License: [SIL Open Font License, Version 1.1]( https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/fonts/CMUSerif/LICENSE_OFL.txt)
 
 ### Images
 

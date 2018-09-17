@@ -1,3 +1,6 @@
+% Fix for hyperref jump
+\phantomsection
+
 \setcounter{tocdepth}{3}
 
 % change listings name below code
@@ -5,9 +8,9 @@
 
 % List of Listings -> List of Algorithms
 \renewcommand{\lstlistlistingname}{\DICTListings}
-\lstlistoflistings
 % add table of contents entry
 \addstarredchapter{\DICTListings}
+\lstlistoflistings
 
 % update mark for use of \leftmark and \rightmark
 \markboth{\DICTListings}{\DICTListings}

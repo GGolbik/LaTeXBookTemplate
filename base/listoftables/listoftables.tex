@@ -1,10 +1,14 @@
+% Fix for hyperref jump
+\phantomsection
+
 \setcounter{tocdepth}{3}
 
 \renewcommand{\listtablename}{\DICTListOfTables}
 \renewcommand{\tablename}{\DICTTableName}
-\listoftables
+
 % add entry to table of contents
 \addstarredchapter{\DICTListOfTables}
+\listoftables
 
 % update mark for use of \leftmark and \rightmark
 \markboth{\DICTListOfTables}{\DICTListOfTables}

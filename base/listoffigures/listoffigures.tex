@@ -1,10 +1,14 @@
+% Fix for hyperref jump
+\phantomsection
+
 \setcounter{tocdepth}{3}
 
 \renewcommand{\listfigurename}{\DICTListOfFigures}
 \renewcommand{\figurename}{\DICTFigureName}
-\listoffigures
+
 % add entry to table of contents
 \addstarredchapter{\DICTListOfFigures}
+\listoffigures
 
 % update mark for use of \leftmark and \rightmark
 \markboth{\DICTListOfFigures}{\DICTListOfFigures}

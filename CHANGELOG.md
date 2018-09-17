@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 * Added font Computer Modern Unicode Serif
 ### Changed
 * Removed (red/green) border from links.
+* Now header and footer of abstract page are empty.
 ### Deprecated
 ### Removed
 ### Fixed

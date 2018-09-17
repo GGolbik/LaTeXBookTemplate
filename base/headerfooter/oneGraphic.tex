@@ -1,0 +1,52 @@
+\pagestyle{fancy}
+
+\fancyhf{}
+
+% E for even page
+% O for odd page
+% L for left side
+% C for centered
+% R for right side
+
+% set header
+%--------------------------------------
+\fancyhead[L]{\includegraphics[width=5mm]{\IMGHeader}}
+\fancyhead[R]{\MakeUppercase{\leftmark}}
+\fancyhead[C]{}
+
+% change header line color
+\patchcmd{\headrule}{\hrule}{\color{LightGray}\hrule}{}{}
+% show header line
+\renewcommand{\headrulewidth}{0.4pt} % set to 0pt if line shall be removed
+%--------------------------------------
+
+
+% set footer
+%--------------------------------------
+\fancyfoot[R]{Page \thepage~of \pageref{LastPage}}
+\fancyfoot[L]{\DICTDocDate}
+\fancyfoot[C]{}
+
+% change footer line color
+\patchcmd{\footrule}{\hrule}{\color{LightGray}\hrule}{}{}
+% show footer line
+\renewcommand{\footrulewidth}{0.4pt}% default is 0pt
+%--------------------------------------
+
+\fancypagestyle{plain}{%
+    \fancyhf{}
+
+    % set header
+    %--------------------------------------
+    \fancyhead[L]{\includegraphics[width=5mm]{\IMGHeader}}
+    \fancyhead[R]{\MakeUppercase{\leftmark}}
+    \fancyhead[C]{}
+    %--------------------------------------
+
+
+    % set footer
+    %--------------------------------------
+    \fancyfoot[R]{Page \thepage~of \pageref{LastPage}}
+    \fancyfoot[L]{\DICTDocDate}
+    \fancyfoot[C]{}
+}

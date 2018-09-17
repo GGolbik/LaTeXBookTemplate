@@ -91,6 +91,11 @@
 }{}
 %--------------------------------------
 
+% Header & footer
+%--------------------------------------
+\input{base/headerfooter/headerfooter}
+%--------------------------------------
+
 % Table of contents
 %-------------------------------------
 \ifthenelse{\equal{\CONFIGEnableTableOfContents}{true}}
@@ -145,15 +150,10 @@
     \input{base/glossary/glossary}
     \newpage
 }{}
-%-------------------------------------- 
+%--------------------------------------
 
 % change page numbering to arabic and start by page 1
 \pagenumbering{arabic}
-
-% Header & footer
-%--------------------------------------
-\input{base/headerfooter/headerfooter}
-%--------------------------------------
 
 % Content
 %--------------------------------------

@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 ### Changed
 * Removed (red/green) border from links.
 * Now header and footer of abstract page are empty.
+* Changed default header and footer
 ### Deprecated
 ### Removed
 ### Fixed

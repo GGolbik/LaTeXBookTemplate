@@ -54,7 +54,7 @@ The preferred font family can be set in
 
 The language can be set in [config/config.tex](https://github.com/GGolbik/GGLaTeXBookTemplate/blob/master/config/config.tex) line 4
 
-## Href border
+## Href frame
 
 The frame around links can be enabled or disabled in [config/config.tex](https://github.com/GGolbik/GGLaTeXBookTemplate/blob/master/config/config.tex) line 25
 

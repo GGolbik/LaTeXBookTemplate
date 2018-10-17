@@ -1,10 +1,12 @@
-\RedeclareSectionCommand[tocnumwidth=6em]{section}
-\RedeclareSectionCommand[tocnumwidth=6.5em]{subsection}
+\ifthenelse{\equal{\CONFIGEnableTableOfAppendixSeparately}{true}}
+{
+    \RedeclareSectionCommand[tocnumwidth=6em]{section}
+    \RedeclareSectionCommand[tocnumwidth=6.5em]{subsection}
 
-\RedeclareSectionCommand[tocindent=0em]{section}
-\RedeclareSectionCommand[tocindent=2em]{subsection}
-
-\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+    \RedeclareSectionCommand[tocindent=0em]{section}
+    \RedeclareSectionCommand[tocindent=2em]{subsection}
+    \addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+}{}
 
 % update mark for use of \leftmark and \rightmark
 \markboth{\DICTAppendix}{\DICTAppendix}
@@ -17,14 +19,22 @@
 
 \addstarredchapter{\DICTAppendix}
 
-\ifthenelse{\equal{\CONFIGEnableTableOfAppendix}{true}}
+\ifthenelse{\equal{\CONFIGEnableTableOfAppendixSeparately}{true}}
 {
-    \vspace{-10mm}
-    \minitoc % show minitoc
-    \newpage
+    \ifthenelse{\equal{\CONFIGEnableTableOfAppendix}{true}}
+    {
+        \vspace{-10mm}
+        \minitoc % show minitoc
+        \newpage
+    }{}
 }{}
 
-\renewcommand{\thesection}{\DICTAppendix~\Alph{section}}
+\ifthenelse{\equal{\CONFIGEnableTableOfAppendixSeparately}{true}}
+{
+    \renewcommand{\thesection}{\DICTAppendix~\Alph{section}}
+}{
+    \renewcommand{\thesection}{\Alph{section}}
+}
 
 % include appendix content
 %--------------------------------------

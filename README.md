@@ -44,51 +44,55 @@ dpkg -i /path/to/deb/file/atom-amd64.deb
 
 ## One-/Two-sided
 
-The document style can be changed from one-sided to two-sided using the **documentclass** property in [main.tex](https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/main.tex) line 6
+The document style can be changed from one-sided to two-sided using the **documentclass** property in [main.tex](https://github.com/GGolbik/GGLaTeXBookTemplate/blob/master/main.tex) line 6
 
 ## Font Family
 The preferred font family can be set in
-[config/config.tex](https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/config/config.tex). (see line 7)
+[config/config.tex](https://github.com/GGolbik/GGLaTeXBookTemplate/blob/master/config/config.tex). (see line 7)
 
 ## Language Support
 
-The language can be set in [config/config.tex](https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/config/config.tex) line 4
+The language can be set in [config/config.tex](https://github.com/GGolbik/GGLaTeXBookTemplate/blob/master/config/config.tex) line 4
+
+## Href border
+
+The frame around links can be enabled or disabled in [config/config.tex](https://github.com/GGolbik/GGLaTeXBookTemplate/blob/master/config/config.tex) line 25
 
 ### Sections
 
 #### Appendix
 * To add a new language you have to create
-    * a new file in [base/appendix](https://github.com/GGerry/GGLaTeXBookTemplate/tree/master/base/appendix). The name of the file must be the language code e.g. **FR** for French + the file extension **.tex**
+    * a new file in [base/appendix](https://github.com/GGolbik/GGLaTeXBookTemplate/tree/master/base/appendix). The name of the file must be the language code e.g. **FR** for French + the file extension **.tex**
 * Syntax: base/appendix/&lt;language code&gt;.tex
 
 #### Contents
 * To add a new language you have to create
-    * a new directory in [contents](https://github.com/GGerry/GGLaTeXBookTemplate/tree/master/contents). The name of the directory must be the language code e.g. **FR** for French.
+    * a new directory in [contents](https://github.com/GGolbik/GGLaTeXBookTemplate/tree/master/contents). The name of the directory must be the language code e.g. **FR** for French.
     * a new file with name **contents.tex** in the previously created directory.
 * Syntax: contents/&lt;language code&gt;/contents.tex
 
 #### Copyright
 * To add a new language you have to create
-    * a new file in [base/copyright](https://github.com/GGerry/GGLaTeXBookTemplate/tree/master/base/copyright). The name of the file must be the language code e.g. **FR** for French + the file extension **.tex**
+    * a new file in [base/copyright](https://github.com/GGolbik/GGLaTeXBookTemplate/tree/master/base/copyright). The name of the file must be the language code e.g. **FR** for French + the file extension **.tex**
 * Syntax: base/copyright/&lt;language code&gt;.tex
 
 #### Dictionary
 * To add a new language you have to create
-    * a new file in [dictionary](https://github.com/GGerry/GGLaTeXBookTemplate/tree/master/dictionary). The name of the file must be the language code e.g. **FR** for French + the file extension **.tex**
+    * a new file in [dictionary](https://github.com/GGolbik/GGLaTeXBookTemplate/tree/master/dictionary). The name of the file must be the language code e.g. **FR** for French + the file extension **.tex**
 * Syntax: dictionary/&lt;language code&gt;.tex
 
 #### Disclaimer
 * To add a new language you have to create
-    * a new file in [base/disclaimer](https://github.com/GGerry/GGLaTeXBookTemplate/tree/master/base/disclaimer). The name of the file must be the language code e.g. **FR** for French + the file extension **.tex**
+    * a new file in [base/disclaimer](https://github.com/GGolbik/GGLaTeXBookTemplate/tree/master/base/disclaimer). The name of the file must be the language code e.g. **FR** for French + the file extension **.tex**
 * Syntax: base/disclaimer/&lt;language code&gt;.tex
 
 #### Glossary
 * To add a new language you have to create
-    * a new file in [base/glossary](https://github.com/GGerry/GGLaTeXBookTemplate/tree/master/base/glossary). The name of the file must be the language code e.g. **FR** for French + the file extension **.tex**
+    * a new file in [base/glossary](https://github.com/GGolbik/GGLaTeXBookTemplate/tree/master/base/glossary). The name of the file must be the language code e.g. **FR** for French + the file extension **.tex**
 * Syntax: base/glossary/&lt;language code&gt;.tex
 
 ## Enable / Disable Sections
-You can decide to include or exclude the below sections. By default all sections are included. If you wish to exclude a section you have to replace `true` with `false` in [config/config.tex](https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/config/config.tex) for the desired section. (see line 9-22)
+You can decide to include or exclude the below sections. By default all sections are included. If you wish to exclude a section you have to replace `true` with `false` in [config/config.tex](https://github.com/GGolbik/GGLaTeXBookTemplate/blob/master/config/config.tex) for the desired section. (see line 9-19 + 22-23)
 * Title Page
 * Disclaimer text (If disclaimer and copyright is exluded the entire page is removed)
 * Copyright text  (If copyright and disclaimer is exluded the entire page is removed)
@@ -98,7 +102,7 @@ You can decide to include or exclude the below sections. By default all sections
 * List of Tables
 * Listings
 * Abbreviations
-* Glossary (The entries can be set in [base/glossary/EN.tex](https://github.com/GGerry/GGLaTeXBookTemplate/tree/master/base/glossary/gglossary.tex))
+* Glossary (The entries can be set in [base/glossary/EN.tex](https://github.com/GGolbik/GGLaTeXBookTemplate/tree/master/base/glossary/gglossary.tex))
 * Appendix
 * Table of Appendix (If appendix is excluded the table of appendix will be excluded, too.)
 * References Page
@@ -106,7 +110,7 @@ You can decide to include or exclude the below sections. By default all sections
 
 ## Counter of figures, tables and lstlisting
 
-You can decide if the counter of figures, tables lstlisting will be affected by the chapter number. By default the counter is affected by the chapter number. If you wish to change this behavior you have to replace `false` with `true` in [config/config.tex](https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/config/config.tex). (see line 25)
+You can decide if the counter of figures, tables lstlisting will be affected by the chapter number. By default the counter is affected by the chapter number. If you wish to change this behavior you have to replace `false` with `true` in [config/config.tex](https://github.com/GGolbik/GGLaTeXBookTemplate/blob/master/config/config.tex). (see line 28)
 
 ## Images
 
@@ -117,11 +121,11 @@ If you want to add an image i advise to do the below steps.
 
 ## Colors
 
-If you wish to use a none standard color you should at the definiton in [config/colors.tex](https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/config/colors.tex)
+If you wish to use a none standard color you should at the definiton in [config/colors.tex](https://github.com/GGolbik/GGLaTeXBookTemplate/blob/master/config/colors.tex)
 
 ## Code Snippets / Listings
 
-The styles for the listings are defined in [config/lstdefinestyle.tex](https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/config/lstdefinestyle.tex). If you want to add a code snippet i advise to do the below steps.
+The styles for the listings are defined in [config/lstdefinestyle.tex](https://github.com/GGolbik/GGLaTeXBookTemplate/blob/master/config/lstdefinestyle.tex). If you want to add a code snippet i advise to do the below steps.
 * copy the file with the code to the `snippets` folder in the project root directory.
 * Create a definition for the code path in `config/snippets.tex` e.g. `\def\SNIPPETExample{snippets/path/to/file/name.html}`
 * To use the snippet in the document write `\lstinputlisting[language=bash, style=customStyleHTMLDark, caption=Snippet title]{\SNIPPETExample}`
@@ -131,22 +135,22 @@ The styles for the listings are defined in [config/lstdefinestyle.tex](https://g
 ### Fonts
 * Noto Serif
     * Source: https://www.google.com/get/noto/#serif-lgc
-    * License: [SIL Open Font License, Version 1.1]( https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/fonts/NotoSerif/LICENSE_OFL.txt)
+    * License: [SIL Open Font License, Version 1.1]( https://github.com/GGolbik/GGLaTeXBookTemplate/blob/master/fonts/NotoSerif/LICENSE_OFL.txt)
 * Noto Serif CJKjp
     * Source: https://www.google.com/get/noto/#serif-jpan
-    * License: [SIL Open Font License, Version 1.1]( https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/fonts/NotoSerifCJKjp/LICENSE_OFL.txt)
+    * License: [SIL Open Font License, Version 1.1]( https://github.com/GGolbik/GGLaTeXBookTemplate/blob/master/fonts/NotoSerifCJKjp/LICENSE_OFL.txt)
 * Noto Sans
     * Source: https://www.google.com/get/noto/#sans-lgc
-    * License: [SIL Open Font License, Version 1.1]( https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/fonts/NotoSans/LICENSE_OFL.txt)
+    * License: [SIL Open Font License, Version 1.1]( https://github.com/GGolbik/GGLaTeXBookTemplate/blob/master/fonts/NotoSans/LICENSE_OFL.txt)
 * Noto Sans CJKjp
     * Source: [Google Noto Fonts](https://www.google.com/get/noto/#sans-jpan)
-    * License: [SIL Open Font License, Version 1.1](https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/fonts/NotoSansCJKjp/LICENSE_OFL.txt)
+    * License: [SIL Open Font License, Version 1.1](https://github.com/GGolbik/GGLaTeXBookTemplate/blob/master/fonts/NotoSansCJKjp/LICENSE_OFL.txt)
 * Roboto
     * Source: [Google Fonts](https://fonts.google.com/specimen/Roboto?selection.family=Roboto)
-    * License: [Apache License 2.0](https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/fonts/Roboto/LICENSE.txt)
+    * License: [Apache License 2.0](https://github.com/GGolbik/GGLaTeXBookTemplate/blob/master/fonts/Roboto/LICENSE.txt)
 * Computer Modern Unicode Serif
     * Source https://www.fontsquirrel.com/fonts/computer-modern
-    * License: [SIL Open Font License, Version 1.1]( https://github.com/GGerry/GGLaTeXBookTemplate/blob/master/fonts/CMUSerif/LICENSE_OFL.txt)
+    * License: [SIL Open Font License, Version 1.1]( https://github.com/GGolbik/GGLaTeXBookTemplate/blob/master/fonts/CMUSerif/LICENSE_OFL.txt)
 
 ### Images
 

@@ -3,11 +3,15 @@ All notable changes to this project will be documented in this file.
 
 ## Unreleased - yyyy-MM-dd
 ### Added
-* Added font Computer Modern Unicode Serif
+* Added font Computer Modern Unicode Serif.
+* Added configuration parameter to show appendix sections in table of contents.
+* Added configuration parameter to hide href borders.
 ### Changed
 * Removed (red/green) border from links.
 * Now header and footer of abstract page are empty.
 * Changed default header and footer
+* Changed quotes in disclaimer
+* Changed brand color
 ### Deprecated
 ### Removed
 ### Fixed

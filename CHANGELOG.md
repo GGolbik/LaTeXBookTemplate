@@ -3,6 +3,14 @@ All notable changes to this project will be documented in this file.
 
 ## Unreleased - yyyy-MM-dd
 ### Added
+### Changed
+### Deprecated
+### Removed
+### Fixed
+### Security
+
+## v1.3.0 - 2018-10-17
+### Added
 * Added font Computer Modern Unicode Serif.
 * Added configuration parameter to show appendix sections in table of contents.
 * Added configuration parameter to hide href borders.

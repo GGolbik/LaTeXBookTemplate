@@ -3,10 +3,13 @@ All notable changes to this project will be documented in this file.
 
 ## Unreleased - yyyy-MM-dd
 ### Added
+* Image with higher resolution for title page.
 ### Changed
+* Description from ShareLaTeX to Overleaf
 ### Deprecated
 ### Removed
 ### Fixed
+* Now the heading of the references is displayed, even if the bibliography does not contain any entries.
 ### Security
 
 ## v1.3.0 - 2018-10-17

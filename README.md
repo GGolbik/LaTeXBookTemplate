@@ -7,10 +7,10 @@ You will find the release notes in the [CHANGELOG.md](https://github.com/GGolbik
 ## Compiling
 
 This LaTeX document is tested with the following tools
-1. **[ShareLaTeX](https://www.sharelatex.com/)**
+1. **[Overleaf](https://www.overleaf.com/)**
 2. **[Atom](https://atom.io/)** editor in combination with **[Tex Live](http://www.tug.org/texlive/)** on Debian 9
 
-### ShareLaTeX
+### Overleaf
 
 * The used compiler is **XeLaTeX**.
 * The main document is **main.tex**.

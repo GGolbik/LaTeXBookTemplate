@@ -91,6 +91,9 @@ The frame around links can be enabled or disabled in [config/config.tex](https:/
     * a new file in [base/glossary](https://github.com/GGolbik/GGLaTeXBookTemplate/tree/master/base/glossary). The name of the file must be the language code e.g. **FR** for French + the file extension **.tex**
 * Syntax: base/glossary/&lt;language code&gt;.tex
 
+## Table of Contents
+* You can define the indent of the sections in [config/layout.tex](https://github.com/GGolbik/GGLaTeXBookTemplate/blob/master/config/layout.tex). (see line 200)
+
 ## Enable / Disable Sections
 You can decide to include or exclude the below sections. By default all sections are included. If you wish to exclude a section you have to replace `true` with `false` in [config/config.tex](https://github.com/GGolbik/GGLaTeXBookTemplate/blob/master/config/config.tex) for the desired section. (see line 9-19 + 22-23)
 * Title Page
@@ -114,7 +117,7 @@ You can decide if the counter of figures, tables lstlisting will be affected by 
 
 ## Images
 
-If you want to add an image i advise to do the below steps.
+If you want to add an image I advise to do the below steps.
 * copy the image to the `images` folder in the project root directory.
 * Create a definition for the image path in `config/images.tex` e.g. `\def\IMGExampleImage{images/path/to/file/name.png}`
 * To use the image in the document write `\includegraphics{\IMGExampleImage}`
@@ -129,6 +132,14 @@ The styles for the listings are defined in [config/lstdefinestyle.tex](https://g
 * copy the file with the code to the `snippets` folder in the project root directory.
 * Create a definition for the code path in `config/snippets.tex` e.g. `\def\SNIPPETExample{snippets/path/to/file/name.html}`
 * To use the snippet in the document write `\lstinputlisting[language=bash, style=customStyleHTMLDark, caption=Snippet title]{\SNIPPETExample}`
+
+## Thesis
+
+There is a example config and title page for a thesis.
+
+Replace in [main.tex](https://github.com/GGolbik/GGLaTeXBookTemplate/blob/master/main.tex)
+* `\input{config/config}` with `\input{config/thesisconfig}` (see line 10-11)
+* `\input{base/titlepage/titlepage}` with `\input{base/titlepage/thesistitlepage}` (see line 37-38)
 
 ## 3rd Party
 

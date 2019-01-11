@@ -64,13 +64,34 @@
         ItalicFont = NotoSerif-Italic.ttf ,
         BoldItalicFont = NotoSerif-BoldItalic.ttf]{NotoSerif-Regular.ttf}
 }{}
+
 \ifthenelse{\equal{\CONFIGFontFamily}{CMUSerif}}
 {
+    % CMU Serif - Use 12pt
     \setmainfont[ExternalLocation=fonts/CMUSerif/,
         BoldFont = cmunbx.ttf,
         ItalicFont = cmunti.ttf,
         BoldItalicFont = cmunbi.ttf]{cmunrm.ttf}
 }{}
+
+\ifthenelse{\equal{\CONFIGFontFamily}{Arial}}
+{
+    % Arial - Use 11pt
+    \setmainfont[ExternalLocation=fonts/Arial/,
+        BoldFont = arialbd.ttf,
+        ItalicFont = ariali.ttf,
+        BoldItalicFont = arialbi.ttf]{arial.ttf}
+}{}
+
+\ifthenelse{\equal{\CONFIGFontFamily}{Times New Roman}}
+{
+    % Times New Roman - Use 12pt
+    \setmainfont[ExternalLocation=fonts/Times New Roman/,
+        BoldFont = timesbd.ttf,
+        ItalicFont = timesi.ttf,
+        BoldItalicFont = timesbi.ttf]{times.ttf}
+}{}
+
 % language Japanese
 %--------------------------------------
     \usepackage{xeCJK}
@@ -174,6 +195,14 @@
 \renewcommand{\UrlBreaks}{\do\/\do\-\do\_\do\.\do\a\do\b\do\c\do\d\do\e\do\f\do\g\do\h\do\i\do\j\do\k\do\l\do\m\do\n\do\o\do\p\do\q\do\r\do\s\do\t\do\u\do\v\do\w\do\x\do\y\do\z\do\A\do\B\do\C\do\D\do\E\do\F\do\G\do\H\do\I\do\J\do\K\do\L\do\M\do\N\do\O\do\P\do\Q\do\R\do\S\do\T\do\U\do\V\do\W\do\X\do\Y\do\Z}
 % reset mono space font style of URLs
 \urlstyle{rm}
+%--------------------------------------
+
+% Table of contents - define indent width
+%--------------------------------------
+%\usepackage{tocloft}
+%% \cftsetindents{kind}{indent}{numwidth}
+%\cftsetindents{section}{0em}{3em}
+%\cftsetindents{subsection}{2em}{5em}
 %--------------------------------------
 
 % Listings - e.g. List of code snippets

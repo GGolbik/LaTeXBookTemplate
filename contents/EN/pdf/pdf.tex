@@ -1,0 +1,11 @@
+\chapter{PDF}\index{PDF}
+
+\includepdf[pages=-,scale=.73,offset=7.5mm 0,frame=true,pagecommand={}]{pdf/demo.pdf}
+
+\includepdf[pages={1,3},scale=.73,offset=7.5mm 0,frame=true,pagecommand={}]{pdf/demo.pdf}
+
+\includepdf[pages=1,scale=.73,offset=7.5mm 0,frame=true,pagecommand=\section{PDF Section 1}]{pdf/demo.pdf}
+
+\def\PdfCommandExample{\section{PDF Section 2}\label{section:example}}
+\includepdf[pages=1,scale=.73,offset=7.5mm 0,frame=true,pagecommand=\PdfCommandExample]{pdf/demo.pdf}
+\includepdf[pages=2-,scale=.73,offset=7.5mm 0,frame=true,pagecommand={}]{pdf/demo.pdf}

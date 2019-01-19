@@ -3,12 +3,13 @@ All notable changes to this project will be documented in this file.
 
 ## Unreleased - yyyy-MM-dd
 ### Added
-* Image with higher resolution for title page.
-* Arial font.
-* Times New Roman font.
-* Example code to define indent in table of contents. (This might be required if the chapter number becomes too large.)
-* Example config for a thesis (see config/thesisconfig.tex).
-* Example title page for a thesis.
+* Added image with higher resolution for title page.
+* Added Arial font.
+* Added Times New Roman font.
+* Added example code to define indent in table of contents. (This might be required if the chapter number becomes too large.)
+* Added example config for a thesis (see config/thesisconfig.tex).
+* Added example title page for a thesis.
+* Added example to include pdf pages.
 ### Changed
 * Description from ShareLaTeX to Overleaf
 ### Deprecated

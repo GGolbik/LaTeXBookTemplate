@@ -1,5 +1,7 @@
-# GGLaTeXBookTemplate
-LaTeX template for books, manuals, documentations, etc.
+# LaTeXBookTemplate
+LaTeX template for books, manuals, documentations, theses, etc.
+
+[See example on Overleaf](https://www.overleaf.com/read/ywqfywbxgkvq)
 
 ## Release Notes
 You will find the release notes in the [CHANGELOG.md](https://github.com/GGolbik/GGLaTeXBookTemplate/blob/master/CHANGELOG.md)
@@ -8,7 +10,7 @@ You will find the release notes in the [CHANGELOG.md](https://github.com/GGolbik
 
 This LaTeX document is tested with the following tools
 1. **[Overleaf](https://www.overleaf.com/)**
-2. **[Atom](https://atom.io/)** editor in combination with **[Tex Live](http://www.tug.org/texlive/)** on Debian 9
+2. **[Atom](https://atom.io/)** editor in combination with **[Tex Live](http://www.tug.org/texlive/)** on Debian 9 and Ubuntu 18.04.1
 
 ### Overleaf
 

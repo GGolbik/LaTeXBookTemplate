@@ -3,6 +3,14 @@ All notable changes to this project will be documented in this file.
 
 ## Unreleased - yyyy-MM-dd
 ### Added
+### Changed
+### Deprecated
+### Removed
+### Fixed
+### Security
+
+## v1.4.0 - 2019-03-20
+### Added
 * Added image with higher resolution for title page.
 * Added Arial font.
 * Added Times New Roman font.

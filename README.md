@@ -23,7 +23,7 @@ This LaTeX document is tested with the following tools
 
 Install TeX Live with the required packages. Therefore execute the below command
 ```
-apt-get install texlive texlive-xetex texlive-lang-german texlive-bibtex-extra biber latexmk
+apt-get install texlive texlive-xetex texlive-lang-german texlive-bibtex-extra biber latexmk latex-cjk-common
 ```
 #### Atom installation
 To build with the [Atom](https://atom.io/) editor on Debian 9 "Stretch" you have to execute the below steps.

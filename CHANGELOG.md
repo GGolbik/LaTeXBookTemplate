@@ -3,11 +3,11 @@ All notable changes to this project will be documented in this file.
 
 ## Unreleased - yyyy-MM-dd
 ### Added
+* Added example for furigana. Depends on **latex-cjk-common**
 ### Changed
 ### Deprecated
 ### Removed
 ### Fixed
-### Security
 
 ## v1.4.0 - 2019-03-20
 ### Added
@@ -24,7 +24,6 @@ All notable changes to this project will be documented in this file.
 ### Removed
 ### Fixed
 * Now the heading of the references is displayed, even if the bibliography does not contain any entries.
-### Security
 
 ## v1.3.0 - 2018-10-17
 ### Added
@@ -41,7 +40,6 @@ All notable changes to this project will be documented in this file.
 ### Removed
 ### Fixed
 * Page numbering of table of contents
-### Security
 
 ## v1.2.0 - 2018-05-28
 ### Added
@@ -56,7 +54,6 @@ All notable changes to this project will be documented in this file.
 ### Fixed
 * Footnote numbering throughout the whole document and not only chapters.
 * Linking to chapters.
-### Security
 
 ## v1.1.0 - 2018-04-04
 ### Added
@@ -81,7 +78,6 @@ All notable changes to this project will be documented in this file.
 * Removed unnecessary font files.
 ### Fixed
 * Now line breaks will work for long URLs, too.
-### Security
 
 ## v1.0.0 - 2018-01-10
 First Release

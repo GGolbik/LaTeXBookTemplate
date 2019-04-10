@@ -15,11 +15,11 @@ LaTeX template for books, manuals, documentations, theses, etc.
         * [Installation of Atom](#installation-of-atom)
     * [Linux](#linux)
         * [Installation of TeX Live](#installation-of-tex-live)
-        * [Installation of Atom](#installation-of-atom)
-    * [Shell Script](shell-script)
+        * [Installation of Atom](#installation-of-atom-1)
+    * [Shell Script](#shell-script)
 * [One-/Two-sided](#one-two-sided)
 * [Font Family](#font-family)
-* [Href frame](#href-frame)
+* [Href Frame](#href-frame)
 * [Language Support](#language-support)
    * [Appendix](#appendix)
    * [Contents](#contents)
@@ -27,7 +27,7 @@ LaTeX template for books, manuals, documentations, theses, etc.
    * [Dictionary](#dictionary)
    * [Disclaimer](#disclaimer)
    * [Glossary](#glossary)
-* [Table of Contents](#table-of-contents)
+* [Table of Contents Layout](#table-of-contents-layout)
 * [Enable / Disable Sections](#enable--disable-sections)
 * [Counter of figures, tables and lstlisting](#counter-of-figures-tables-and-lstlisting)
 * [Images](#images)
@@ -35,9 +35,9 @@ LaTeX template for books, manuals, documentations, theses, etc.
 * [Code Snippets / Listings](#code-snippets--listings)
 * [Thesis](#thesis)
 * [Write Japanese](#write-japanese)
-* [3rd Party](#3rdparty)
+* [3rd Party](#3rd-party)
    * [Fonts](#fonts)
-   * [images](#images-1)
+   * [Images](#images-1)
 
 ---
 
@@ -133,7 +133,7 @@ The document style can be changed from one-sided to two-sided using the **docume
 The preferred font family can be set in
 [config/config.tex](https://github.com/GGolbik/GGLaTeXBookTemplate/blob/master/config/config.tex). (see line 7)
 
-## Href frame
+## Href Frame
 
 The frame around links can be enabled or disabled in [config/config.tex](https://github.com/GGolbik/GGLaTeXBookTemplate/blob/master/config/config.tex) line 25
 
@@ -172,7 +172,7 @@ The language can be set in [config/config.tex](https://github.com/GGolbik/GGLaTe
     * a new file in [base/glossary](https://github.com/GGolbik/GGLaTeXBookTemplate/tree/master/base/glossary). The name of the file must be the language code e.g. **FR** for French + the file extension **.tex**
 * Syntax: base/glossary/&lt;language code&gt;.tex
 
-## Table of Contents
+## Table of Contents Layout
 * You can define the indent of the sections in [config/layout.tex](https://github.com/GGolbik/GGLaTeXBookTemplate/blob/master/config/layout.tex). (see line 200)
 
 ## Enable / Disable Sections

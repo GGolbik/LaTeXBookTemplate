@@ -6,27 +6,60 @@ LaTeX template for books, manuals, documentations, theses, etc.
 ## Release Notes
 You will find the release notes in the [CHANGELOG.md](https://github.com/GGolbik/GGLaTeXBookTemplate/blob/master/CHANGELOG.md)
 
-## Compiling
+## Build and Setup
 
 This LaTeX document is tested with the following tools
 1. **[Overleaf](https://www.overleaf.com/)**
-2. **[Atom](https://atom.io/)** editor in combination with **[Tex Live](http://www.tug.org/texlive/)** on Debian 9 and Ubuntu 18.04.1
+2. **[Atom](https://atom.io/)** editor in combination with **[Tex Live](http://www.tug.org/texlive/)**. Tested with:
+   - Debian 9
+   - Debian 10
+   - Ubuntu 18.04.1
+3. **[Atom](https://atom.io/)** editor in combination with **[MiKTeX](https://miktex.org/)**. Tested with:
+    - Windows 7
 
 ### Overleaf
 
 * The used compiler is **XeLaTeX**.
 * The main document is **main.tex**.
 
-### Atom and TeX Live
+### Windows
 
-#### TeX Live installation
+To build with the [Atom](https://atom.io/) editor on Windows you have to execute the below steps.
+
+#### Installation of MiKTeX
+
+1. Download the installation file from https://miktex.org/
+2. Install MiKTeX
+3. Download [ActivePerl.exe](https://www.activestate.com/activeperl/downloads)
+4. Install ActivePerl
+5. Navigate to **C:\Program Files\MiKTeX 2.9\miktex\bin\x64** and run **perltex.exe**
+
+#### Installation of Atom
+
+1. Download the installation file from https://atom.io/
+2. Install Atom
+3. Run Atom and install the packages
+    * `atom-latex`
+        * v0.8.2: There is a known issue on UNIX systems https://github.com/James-Yu/Atom-LaTeX/issues/110. (Fixed in version v0.8.3)<br>
+        Therefore you have to edit the file `/home/<user>/.atom/packages/atom-latex/lib/builder.coffee` in line 66 from `@buildErrs += data` to `@buildErrs[@buildErrs.length - 1] += data`
+    * `language-latex`
+4. Open the `atom-latex` package settings and change
+    * `LaTeX compiler to use` to `xelatex`
+    * `BibTex compiler to use` to `biber`
+    * Add to the default values of `Files to clean` the file extensions `*.run.xml, *.gz, *.atfi, *.bcf, *.maf, *mtc*, *.ilg, *.lol, *.glsdefs`
+    * make sure that `Clean LaTeX auxiliary files after building process` is enabled.
+
+### Linux
+
+To build with the [Atom](https://atom.io/) editor on Linux you have to execute the below steps.
+
+#### Installation of TeX Live
 
 Install TeX Live with the required packages. Therefore execute the below command
 ```
 apt-get install texlive texlive-xetex texlive-lang-german texlive-bibtex-extra biber latexmk latex-cjk-common
 ```
-#### Atom installation
-To build with the [Atom](https://atom.io/) editor on Debian 9 "Stretch" you have to execute the below steps.
+#### Installation of Atom
 
 1. Download the .deb package from https://atom.io/
 2. Install Atom with the command

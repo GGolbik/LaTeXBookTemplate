@@ -4,6 +4,7 @@ All notable changes to this project will be documented in this file.
 ## Unreleased - yyyy-MM-dd
 ### Added
 * Added example for furigana. Depends on **latex-cjk-common**
+* Added description to build project on windows
 ### Changed
 ### Deprecated
 ### Removed

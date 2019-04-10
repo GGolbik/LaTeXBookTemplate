@@ -16,6 +16,10 @@ This LaTeX document is tested with the following tools
    - Ubuntu 18.04.1
 3. **[Atom](https://atom.io/)** editor in combination with **[MiKTeX](https://miktex.org/)**. Tested with:
     - Windows 7
+4. **Shell** script in combination with **[Tex Live](http://www.tug.org/texlive/)**. Tested with:
+   - Debian 9
+   - Debian 10
+   - Ubuntu 18.04.1
 
 ### Overleaf
 
@@ -76,6 +80,12 @@ dpkg -i /path/to/deb/file/atom-amd64.deb
     * `BibTex compiler to use` to `biber`
     * Add to the default values of `Files to clean` the file extensions `*.run.xml, *.gz, *.atfi, *.bcf, *.maf, *mtc*, *.ilg, *.lol, *.glsdefs`
     * make sure that `Clean LaTeX auxiliary files after building process` is enabled.
+
+### Shell Script
+Just execute the **build.sh** script.
+```
+sh build.sh
+```
 
 ## One-/Two-sided
 

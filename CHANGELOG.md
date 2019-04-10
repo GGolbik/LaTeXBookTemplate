@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ### Added
 * Added example for furigana. Depends on **latex-cjk-common**
 * Added description to build project on windows
+* Added shell script to build project on linux
 ### Changed
 ### Deprecated
 ### Removed

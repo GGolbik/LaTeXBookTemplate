@@ -186,6 +186,48 @@ Replace in [main.tex](https://github.com/GGolbik/GGLaTeXBookTemplate/blob/master
 * `\input{config/config}` with `\input{config/thesisconfig}` (see line 10-11)
 * `\input{base/titlepage/titlepage}` with `\input{base/titlepage/thesistitlepage}` (see line 37-38)
 
+## Write japanese
+Installation of Japanese (Mozc) (IBus) on Debian.
+
+First, set up locales:
+
+```
+sudo dpkg-reconfigure locales
+```
+
+In addition to the English locale (en_US.UTF-8) or German locale (de_DE.UTF-8), include Japanese locales (**ja_JP.EUC-JP** and **ja_JP.UTF-8**). However, set the default locale for the system to **en_US.UTF-8** or **de_DE.UTF-8**.
+
+Install im-config:
+```
+sudo apt-get install im-config
+```
+
+Install and configure IBus-related packages:
+```
+sudo apt-get install ibus ibus-clutter ibus-mozc
+```
+```
+sudo apt-get install ibus-gtk3
+```
+
+Run
+```
+im-config
+```
+Select **No** to the question from im-config.
+
+Run the IBus setup program:
+
+```
+ibus-setup
+```
+
+If asked, start ibus-daemon.
+
+Under the Input Method tab, add -> Japanese -> Mozc.
+
+Under IBus Preferences, configure things to your liking. For example, I prefer making Ctrl + Space (as opposed to Shift + Space) trigger the switch between input modes. The IBus icon also shows up in the system tray, from which various settings can be changed.
+
 ## 3rd Party
 
 ### Fonts

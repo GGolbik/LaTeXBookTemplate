@@ -3,9 +3,10 @@ All notable changes to this project will be documented in this file.
 
 ## Unreleased - yyyy-MM-dd
 ### Added
-* Added example for furigana. Depends on **latex-cjk-common**
-* Added description to build project on windows
-* Added shell script to build project on linux
+* Added example for furigana. Depends on **latex-cjk-common**.
+* Added description to build project on windows.
+* Added shell script to build project on linux.
+* Added description to write japanese on debian.
 ### Changed
 ### Deprecated
 ### Removed

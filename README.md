@@ -3,6 +3,44 @@ LaTeX template for books, manuals, documentations, theses, etc.
 
 [See example on Overleaf](https://www.overleaf.com/read/ywqfywbxgkvq)
 
+---
+
+## Table of Contents
+
+* [Release Notes](#release-notes)
+* [Build and Setup](#build-and-setup)
+    * [Overleaf](#overleaf)
+    * [Windows](#windows)
+        * [Installation of MiKTeX](#installation-of-miktex)
+        * [Installation of Atom](#installation-of-atom)
+    * [Linux](#linux)
+        * [Installation of TeX Live](#installation-of-tex-live)
+        * [Installation of Atom](#installation-of-atom)
+    * [Shell Script](shell-script)
+* [One-/Two-sided](#one-two-sided)
+* [Font Family](#font-family)
+* [Href frame](#href-frame)
+* [Language Support](#language-support)
+   * [Appendix](#appendix)
+   * [Contents](#contents)
+   * [Copyright](#copyright)
+   * [Dictionary](#dictionary)
+   * [Disclaimer](#disclaimer)
+   * [Glossary](#glossary)
+* [Table of Contents](#table-of-contents)
+* [Enable / Disable Sections](#enable--disable-sections)
+* [Counter of figures, tables and lstlisting](#counter-of-figures-tables-and-lstlisting)
+* [Images](#images)
+* [Colors](#colors)
+* [Code Snippets / Listings](#code-snippets--listings)
+* [Thesis](#thesis)
+* [Write Japanese](#write-japanese)
+* [3rd Party](#3rdparty)
+   * [Fonts](#fonts)
+   * [images](#images-1)
+
+---
+
 ## Release Notes
 You will find the release notes in the [CHANGELOG.md](https://github.com/GGolbik/GGLaTeXBookTemplate/blob/master/CHANGELOG.md)
 
@@ -95,43 +133,41 @@ The document style can be changed from one-sided to two-sided using the **docume
 The preferred font family can be set in
 [config/config.tex](https://github.com/GGolbik/GGLaTeXBookTemplate/blob/master/config/config.tex). (see line 7)
 
-## Language Support
-
-The language can be set in [config/config.tex](https://github.com/GGolbik/GGLaTeXBookTemplate/blob/master/config/config.tex) line 4
-
 ## Href frame
 
 The frame around links can be enabled or disabled in [config/config.tex](https://github.com/GGolbik/GGLaTeXBookTemplate/blob/master/config/config.tex) line 25
 
-### Sections
+## Language Support
 
-#### Appendix
+The language can be set in [config/config.tex](https://github.com/GGolbik/GGLaTeXBookTemplate/blob/master/config/config.tex) line 4
+
+### Appendix
 * To add a new language you have to create
     * a new file in [base/appendix](https://github.com/GGolbik/GGLaTeXBookTemplate/tree/master/base/appendix). The name of the file must be the language code e.g. **FR** for French + the file extension **.tex**
 * Syntax: base/appendix/&lt;language code&gt;.tex
 
-#### Contents
+### Contents
 * To add a new language you have to create
     * a new directory in [contents](https://github.com/GGolbik/GGLaTeXBookTemplate/tree/master/contents). The name of the directory must be the language code e.g. **FR** for French.
     * a new file with name **contents.tex** in the previously created directory.
 * Syntax: contents/&lt;language code&gt;/contents.tex
 
-#### Copyright
+### Copyright
 * To add a new language you have to create
     * a new file in [base/copyright](https://github.com/GGolbik/GGLaTeXBookTemplate/tree/master/base/copyright). The name of the file must be the language code e.g. **FR** for French + the file extension **.tex**
 * Syntax: base/copyright/&lt;language code&gt;.tex
 
-#### Dictionary
+### Dictionary
 * To add a new language you have to create
     * a new file in [dictionary](https://github.com/GGolbik/GGLaTeXBookTemplate/tree/master/dictionary). The name of the file must be the language code e.g. **FR** for French + the file extension **.tex**
 * Syntax: dictionary/&lt;language code&gt;.tex
 
-#### Disclaimer
+### Disclaimer
 * To add a new language you have to create
     * a new file in [base/disclaimer](https://github.com/GGolbik/GGLaTeXBookTemplate/tree/master/base/disclaimer). The name of the file must be the language code e.g. **FR** for French + the file extension **.tex**
 * Syntax: base/disclaimer/&lt;language code&gt;.tex
 
-#### Glossary
+### Glossary
 * To add a new language you have to create
     * a new file in [base/glossary](https://github.com/GGolbik/GGLaTeXBookTemplate/tree/master/base/glossary). The name of the file must be the language code e.g. **FR** for French + the file extension **.tex**
 * Syntax: base/glossary/&lt;language code&gt;.tex
@@ -186,7 +222,7 @@ Replace in [main.tex](https://github.com/GGolbik/GGLaTeXBookTemplate/blob/master
 * `\input{config/config}` with `\input{config/thesisconfig}` (see line 10-11)
 * `\input{base/titlepage/titlepage}` with `\input{base/titlepage/thesistitlepage}` (see line 37-38)
 
-## Write japanese
+## Write Japanese
 Installation of Japanese (Mozc) (IBus) on Debian.
 
 First, set up locales:

@@ -173,7 +173,7 @@ The language can be set in [config/config.tex](https://github.com/GGolbik/GGLaTe
 * Syntax: base/glossary/&lt;language code&gt;.tex
 
 ## Table of Contents Layout
-* You can define the indent of the sections in [config/layout.tex](https://github.com/GGolbik/GGLaTeXBookTemplate/blob/master/config/layout.tex). (see line 200)
+* You can define the indent of the sections in [config/layout.tex](https://github.com/GGolbik/GGLaTeXBookTemplate/blob/master/config/layout.tex). (see line 203)
 
 ## Enable / Disable Sections
 You can decide to include or exclude the below sections. By default all sections are included. If you wish to exclude a section you have to replace `true` with `false` in [config/config.tex](https://github.com/GGolbik/GGLaTeXBookTemplate/blob/master/config/config.tex) for the desired section. (see line 9-19 + 22-23)

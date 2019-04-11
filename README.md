@@ -18,6 +18,7 @@ LaTeX template for books, manuals, documentations, theses, etc.
         * [Installation of Atom](#installation-of-atom-1)
     * [Shell Script](#shell-script)
 	* [Write Japanese](#write-japanese)
+	* [Debian PDF Viewer](#debian-pdf-viewer)
 * [Configuration](#configuration)
 	* [One-/Two-sided](#one-two-sided)
 	* [Enable / Disable Sections](#enable--disable-sections)
@@ -129,7 +130,7 @@ Just execute the **build.sh** script.
 sh build.sh
 ```
 
-## Write Japanese
+### Write Japanese
 Installation of Japanese (Mozc) (IBus) on Debian.
 
 First, set up locales:
@@ -170,6 +171,14 @@ If asked, start ibus-daemon.
 Under the Input Method tab, add -> Japanese -> Mozc.
 
 Under IBus Preferences, configure things to your liking. For example, I prefer making Ctrl + Space (as opposed to Shift + Space) trigger the switch between input modes. The IBus icon also shows up in the system tray, from which various settings can be changed.
+
+### Debian PDF Viewer 
+
+On debian it might be necessary to install additonal fonts to see japanese characters.
+
+```
+apt install fonts-arphic-ukai fonts-arphic-uming fonts-ipafont-mincho fonts-ipafont-gothic fonts-unfonts-core
+```
 
 ---
 

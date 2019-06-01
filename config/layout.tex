@@ -7,6 +7,8 @@
 {
     \usepackage{geometry}\geometry{
         a4paper, % a4 size 210x297 mm
+        %paperheight=297mm,
+        %paperwidth=210mm,
         left=35mm,
         right=20mm,
         top=35mm,
@@ -18,6 +20,8 @@
 {
     \usepackage{geometry}\geometry{
         a4paper, % a4 size 210x297 mm
+        %paperheight=297mm,
+        %paperwidth=210mm,
         twoside,
         left=35mm,
         right=20mm,
@@ -31,6 +35,12 @@
 
 % reduce chapter margin
 \renewcommand*{\chapterheadstartvskip}{\vspace*{0mm}}
+
+% remove vertical stretch
+\ifthenelse{\equal{\CONFIGRaggedbottom}{true}}
+{
+  \raggedbottom
+}
 
 % Multi line comments
 %--------------------------------------
@@ -142,6 +152,10 @@
 %--------------------------------------
 \usepackage[table]{xcolor}
 \input{config/colors}
+% Package required to temove justification from a longtable. And you must add
+% >{\raggedright\arraybackslash}
+% to the longtable
+\usepackage{array}
 %--------------------------------------
 
 % images
@@ -287,4 +301,8 @@
 % PDF
 %--------------------------------------
 \usepackage{pdfpages}
+\input{config/pdf}
+% Define scale and margin. Might be changed if paper size is not A4.
+\def\PDFPropertyScale{0.73}
+\def\PDFPropertyOffset{7.5mm}
 %--------------------------------------

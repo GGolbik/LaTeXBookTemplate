@@ -11,7 +11,7 @@ LaTeX template for books, manuals, documentations, theses, etc.
 * [Build and Setup](#build-and-setup)
 	* [Overleaf](#overleaf)
     * [Windows](#windows)
-	* [Installation of MiKTeX](#installation-of-miktex)
+		* [Installation of MiKTeX](#installation-of-miktex)
 		* [Installation of Atom](#installation-of-atom)
     * [Linux](#linux)
         * [Installation of TeX Live](#installation-of-tex-live)
@@ -37,7 +37,7 @@ LaTeX template for books, manuals, documentations, theses, etc.
 	* [Thesis](#thesis)
 	* [Images](#images)
 	* [Colors](#colors)
-	* [Code Snippets / Listings](#code-snippets--listings)	
+	* [Code Snippets / Listings](#code-snippets--listings)
 * [3rd Party](#3rd-party)
 	* [Fonts](#fonts)
 	* [Images](#images-1)
@@ -170,9 +170,11 @@ If asked, start ibus-daemon.
 
 Under the Input Method tab, add -> Japanese -> Mozc.
 
-Under IBus Preferences, configure things to your liking. For example, I prefer making Ctrl + Space (as opposed to Shift + Space) trigger the switch between input modes. The IBus icon also shows up in the system tray, from which various settings can be changed.
+Under IBus Preferences, configure things to your liking. For example, I prefer making Ctrl + Space (as opposed to Shift + Space) trigger the switch between input modes. The IBus icon also shows up in the system tray, from which various settings can be changed. The default key short cut might be Super(Windows) Key + Space.
 
-### Debian PDF Viewer 
+Further tipps: http://www.textfugu.com/season-4/social-learning/9-3/
+
+### Debian PDF Viewer
 
 On debian it might be necessary to install additonal fonts to see japanese characters.
 

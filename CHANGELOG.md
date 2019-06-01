@@ -11,6 +11,7 @@ All notable changes to this project will be documented in this file.
 ### Deprecated
 ### Removed
 ### Fixed
+* Fixed stretching across the page.
 
 ## v1.4.0 - 2019-03-20
 ### Added

@@ -3,6 +3,13 @@ All notable changes to this project will be documented in this file.
 
 ## Unreleased - yyyy-MM-dd
 ### Added
+### Changed
+### Deprecated
+### Removed
+### Fixed
+
+## v1.5.0 - 2019-06-09
+### Added
 * Added example for furigana. Depends on **latex-cjk-common**.
 * Added description to build project on windows.
 * Added shell script to build project on linux.
